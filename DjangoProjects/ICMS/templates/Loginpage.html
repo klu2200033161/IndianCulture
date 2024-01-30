@@ -1,5 +1,6 @@
 <!-- indian_management_system/templates/login.html -->
-<!DOCTYPE html>
+{% load static %}
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,6 +17,9 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
+            background-image: url("{% static 'images/logbackground.png' %}");
+            background-size: cover;
+
         }
 
         .container {
@@ -50,6 +54,7 @@
 
         button:hover {
             background-color: #2980b9;
+
         }
     </style>
 </head>

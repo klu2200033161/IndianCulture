@@ -1,5 +1,6 @@
 <!-- indian_management_system/templates/register.html -->
-<!DOCTYPE html>
+{% load static %}
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,6 +17,8 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
+            background-image: url("{% static 'images/logbackground.png' %}");
+            background-size: cover;
         }
 
         .container {
