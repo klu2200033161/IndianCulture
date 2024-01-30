@@ -1,4 +1,3 @@
-<!-- indian_management_system/templates/register.html -->
 {% load static %}
 
 <html lang="en">
@@ -10,15 +9,13 @@
         body {
             margin: 0;
             padding: 0;
-            background: url('path/to/your/background.jpg') no-repeat center center fixed;
+            background: url("{% static 'images/logbackground.png' %}") no-repeat center center fixed;
             background-size: cover;
             font-family: 'Arial', sans-serif;
             display: flex;
             align-items: center;
             justify-content: center;
             height: 100vh;
-            background-image: url("{% static 'images/logbackground.png' %}");
-            background-size: cover;
         }
 
         .container {
@@ -63,12 +60,16 @@
             {% csrf_token %}
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
-            <br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
-            <label for="Confirm password">Confirm Password:</label>
-            <input type="password" id="confirm password" name="password" required>
-            <br>
+
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+
             <button type="submit">Register</button>
         </form>
     </div>
