@@ -58,7 +58,7 @@
 </head>
 <body>
     <div class="container">
-        <h2>Create a New Account - Indian Management System</h2>
+        <h2>Create a New Account - Indian Culture Management System</h2>
         <form method="post" action="{% url 'register' %}">
             {% csrf_token %}
             <label for="username">Username:</label>
@@ -66,6 +66,8 @@
             <br>
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
+            <label for="Confirm password">Confirm Password:</label>
+            <input type="password" id="confirm password" name="password" required>
             <br>
             <button type="submit">Register</button>
         </form>
