@@ -9,8 +9,21 @@
 {% block body %}
 <div>
 <br>
-    &nbsp;
-
+     <div class="card">
+              <div class="card">
+            <div class="card-body" style="background-color:#924802; color:#F8F9F9;">
+                <h5 class="card-title">INDIAN CULTURE OVERVIEW</h5>
+                <!-- Use the locally hosted video file -->
+                <video autoplay muted loop playsinline width="100%">
+                    <!-- Update the source path to your local video file -->
+                    <source src="{% static 'video/india.mp4' %}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+         <script>
+    document.getElementById('backgroundVideo').playbackRate = 3;
+</script>
 <div class="card-group">
 
   <div class="card">
