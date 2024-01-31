@@ -1,0 +1,170 @@
+{% extends 'Navbar1.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Famous Places</title>
+    <link rel="stylesheet" href="{% static 'path/to/bootstrap.min.css' %}">
+</head>
+<body>
+{% block body %}
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="#11">
+      <img src="{% static 'classicaldances/bharatanatyam.jpg' %}" class="d-block w-100" alt="Bharatanatyam" height="625px">
+    </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#12">
+      <img src="{% static 'classicaldances/kathak.jpg' %}" class="d-block w-100" alt="Kathak" height="625px">
+      </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#13">
+      <img src="{% static 'classicaldances/kathakali.jpg' %}" class="d-block w-100" alt="Kathakali" height="625px">
+    </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#14">
+      <img src="{% static 'classicaldances/kuchipudi.jpg' %}" class="d-block w-100" alt="Kuchipudi" height="625px">
+    </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#15">
+      <img src="{% static 'classicaldances/Manipuri.jpg' %}" class="d-block w-100" alt="Manipuri" height="625px">
+    </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#16">
+      <img src="{% static 'classicaldances/Mohiniyattam.jpg' %}" class="d-block w-100" alt="Mohiniyattam" height="625px">
+    </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#17">
+      <img src="{% static 'classicaldances/odissi.jpeg' %}" class="d-block w-100" alt="Odissi" height="625px">
+    </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#18">
+      <img src="{% static 'classicaldances/Sattriya.jpg' %}" class="d-block w-100" alt="Sattriya" height="625px">
+    </a>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<script src="{% static 'path/to/jquery.min.js' %}"></script>
+<script src="{% static 'path/to/bootstrap.bundle.min.js' %}"></script>
+
+<script>
+$(document).ready(function(){
+
+    var interval = 1000;
+
+    // Function to auto-slide the carousel
+    function autoSlideCarousel() {
+        $('#carouselExample').carousel('next');
+    }
+
+    // Set the interval for auto-sliding
+    setInterval(autoSlideCarousel, interval);
+});
+</script>
+<div style="background-color:#924802;">
+<br><br>
+<center><h1 style="color:#F8F9F9;">FAMOUS CLASSICAL DANCES FROM INDIA</h1></center>
+<br>
+<div id="11" class="div11">
+<div class="card text-center" >
+  <div class="card-header">
+    <b>BHARATANATYAM</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Bharatanatyam, rooted in ancient Indian traditions, is a classical dance form originating from Tamil Nadu. Known for its rhythmic footwork, intricate hand gestures (mudras), and emotive facial expressions, it serves as a visual storytelling medium for Hindu mythology and spirituality. Dancers undergo extensive training to master the dance's technical and expressive aspects. The art form, with origins in temple rituals, has evolved into a stage performance that captivates audiences worldwide. Its repertoire includes adavus (basic dance units), abhinaya (expression), and elaborate costumes, creating a rich tapestry of cultural and artistic significance. Bharatanatyam embodies a deep connection to history, spirituality, and the aesthetic beauty of Indian classical dance.</p>
+  </div>
+  </div>
+</div>
+<br>
+
+<div id="12" class="card text-center" >
+  <div class="card-header">
+    <b>KATHAK</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Kathak, a classical dance form of North India, is known for its dynamic footwork, intricate spins, and expressive storytelling. Originating from traditional storytelling techniques in ancient temples, Kathak evolved into a sophisticated dance form under the Mughal influence. Dancers use rhythmic patterns (tala) and swift movements to convey narratives, often drawing inspiration from Indian mythology and historical tales. The dance incorporates both grace and power, with elaborate costumes and ankle bells enhancing the visual and auditory experience. Kathak continues to thrive as a captivating art form, blending tradition with innovation, and reflecting the cultural heritage of India.</p>
+  </div>
+
+</div>
+<br>
+<div id="13" class="card text-center" >
+  <div class="card-header">
+    <b>KATHAKALI</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Kathakali, a vibrant classical dance-drama hailing from Kerala, South India, is renowned for its elaborate makeup, colorful costumes, and distinctive facial expressions. Combining dance, drama, and music, Kathakali traditionally narrates stories from Indian epics like the Mahabharata and Ramayana. Performers, adorned with intricate costumes and dramatic face paint, use stylized gestures (mudras) and synchronized footwork to convey emotions and characters. The dance-drama demands rigorous training, with performers often undergoing years of preparation. Kathakali stands as a captivating representation of Kerala's rich cultural heritage, showcasing a unique blend of mythology, artistry, and theatricality.</p>
+  </div>
+
+</div>
+<br>
+<div id="14" class="card text-center" >
+  <div class="card-header">
+    <b>KUCHIPUDI</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Kuchipudi, a classical dance form originating from the state of Andhra Pradesh in South India, is characterized by its graceful movements, intricate footwork, and blend of storytelling and expressive dance. With roots in ancient Sanskrit texts, Kuchipudi often depicts mythological tales, showcasing the dancer's ability to seamlessly transition between narrative and pure dance sequences. Performers, both male and female, wear traditional costumes and adorn themselves with ornate jewelry. Kuchipudi emphasizes a balance of Lasya (graceful, lyrical) and Tandava (energetic, masculine) aspects, creating a captivating and versatile dance experience. This art form continues to enchant audiences worldwide with its cultural richness and aesthetic appeal.</p>
+ </div>
+
+</div>
+<br>
+<div id="15" class="card text-center" >
+  <div class="card-header">
+    <b>MANIPURI</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Manipuri dance, originating from the northeastern state of Manipur in India, is a classical dance form celebrated for its gentle and lyrical movements. Rooted in the region's rich cultural and religious traditions, Manipuri often narrates stories from Hindu mythology and showcases themes of devotion. Dancers wear vibrant traditional costumes, including cylindrical skirts and conical headdresses, adding to the visual allure. The dance is characterized by its circular and flowing patterns, intricate hand gestures, and delicate footwork. Manipuri dance embodies a spiritual connection, reflecting the serene landscapes and cultural diversity of Manipur, making it a captivating expression of the region's artistic heritage.</p>
+ </div>
+
+</div>
+<br>
+<div id="16" class="card text-center" >
+  <div class="card-header">
+    <b>MOHINIYATTAM</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Bharatanatyam, rooted in ancient Indian traditions, is a classical dance form originating from Tamil Nadu. Known for its rhythmic footwork, intricate hand gestures (mudras), and emotive facial expressions, it serves as a visual storytelling medium for Hindu mythology and spirituality. Dancers undergo extensive training to master the dance's technical and expressive aspects. The art form, with origins in temple rituals, has evolved into a stage performance that captivates audiences worldwide. Its repertoire includes adavus (basic dance units), abhinaya (expression), and elaborate costumes, creating a rich tapestry of cultural and artistic significance. Bharatanatyam embodies a deep connection to history, spirituality, and the aesthetic beauty of Indian classical dance.</p>
+  <Mohiniyattam, originating from the state of Kerala in South India, is a graceful classical dance form characterized by fluid movements, subtle expressions, and storytelling. Named after Mohini, the enchantress avatar of Lord Vishnu, the dance exudes feminine charm and beauty. Dancers adorned in traditional white and gold costumes perform intricate hand gestures (mudras) and delicate footwork, creating a harmonious and lyrical presentation. Mohiniyattam often portrays mythological tales, combining elements of devotion, love, and spirituality. This dance form, with its emphasis on elegance and expressiveness, serves as a poignant representation of Kerala's cultural heritage and continues to captivate audiences with its aesthetic appeal.</p>
+    </div>
+
+</div>
+<br>
+<div id="17" class="card text-center" >
+  <div class="card-header">
+    <b>ODISSI</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Odissi, a classical dance form originating from the eastern state of Odisha in India, is characterized by its fluid movements, sculpturesque poses, and expressive storytelling. Rooted in ancient temple traditions, Odissi often depicts mythological stories, devotional themes, and episodes from the life of Lord Krishna. Dancers wear traditional costumes with elaborate jewelry, and their makeup accentuates intricate facial expressions. The dance involves graceful gestures, intricate footwork, and dynamic postures, creating a visual spectacle. Odissi embodies a seamless blend of sensuality, devotion, and rhythmic precision, making it a significant cultural treasure that reflects the artistic richness of Odisha. </p>
+ </div>
+
+</div>
+<br>
+<div id="18" class="card text-center" >
+  <div class="card-header">
+    <b>SATRIYA</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Sattriya, a classical dance form originating from the Indian state of Assam, holds its roots in the devotional practices of the Assamese Vaishnavite monasteries. With a focus on spiritual storytelling, Sattriya showcases fluid movements, intricate footwork, and expressive mime, emphasizing themes from the Bhagavata Purana. Dancers, typically male monks known as Bhokots, wear traditional costumes adorned with masks and utilize unique hand gestures (mudras) to convey narratives. The dance form underwent a revival in the mid-20th century, gaining recognition as one of the eight classical Indian dance forms. Sattriya beautifully encapsulates the religious and cultural heritage of Assam, offering a distinctive and spiritual dance experience.</p>
+</div>
+</div>
+  <br>
+  </div>
+{% endblock %}
+</body>
+</html>

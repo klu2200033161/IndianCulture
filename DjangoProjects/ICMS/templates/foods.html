@@ -1,0 +1,175 @@
+{% extends 'Navbar1.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Famous Places</title>
+    <link rel="stylesheet" href="{% static 'path/to/bootstrap.min.css' %}">
+</head>
+<body>
+{% block body %}
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="#11">
+      <img src="{% static 'foods/south.jpg' %}" class="d-block w-100" alt="diwali" height="625px" style="background-repeat:no-repeat; background-size:cover;">
+    </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#12">
+      <img src="{% static 'foods/biriyani.jpg' %}" class="d-block w-100" alt="sankranthi" height="625px" style="background-repeat:no-repeat; background-size:cover;">
+      </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#13">
+      <img src="{% static 'foods/pappu.jpeg' %}" class="d-block w-100" alt="navaratri" height="625px" style="background-repeat:no-repeat; background-size:cover;">
+    </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#14">
+      <img src="{% static 'foods/idli.jpg' %}" class="d-block w-100" alt="holi" height="625px" style="background-repeat:no-repeat; background-size:cover;">
+    </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#15">
+      <img src="{% static 'foods/haleem.jpg' %}" class="d-block w-100" alt="Eid" height="625px" style="background-repeat:no-repeat; background-size:cover;">
+    </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#16">
+      <img src="{% static 'foods/vadapav.jpg' %}" class="d-block w-100" alt="dussera" height="625px" style="background-repeat:no-repeat; background-size:cover;">
+    </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#17">
+      <img src="{% static 'foods/punjabi.jpg' %}" class="d-block w-100" alt="christmas" height="625px" style="background-repeat:no-repeat; background-size:cover;">
+    </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#18">
+      <img src="{% static 'foods/pongal.jpg' %}" class="d-block w-100" alt="christmas" height="625px" style="background-repeat:no-repeat; background-size:cover;">
+    </a>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<script src="{% static 'path/to/jquery.min.js' %}"></script>
+<script src="{% static 'path/to/bootstrap.bundle.min.js' %}"></script>
+
+<script>
+$(document).ready(function(){
+
+    var interval = 1000;
+
+    // Function to auto-slide the carousel
+    function autoSlideCarousel() {
+        $('#carouselExample').carousel('next');
+    }
+
+    // Set the interval for auto-sliding
+    setInterval(autoSlideCarousel, interval);
+});
+</script>
+<div style="background-color:#924802;">
+<br><br>
+<center><h1 style="color:#F8F9F9;">FAMOUS CULTURAL FOODS FROM INDIA</h1></center>
+<br>
+<div id="11" class="div11">
+<div class="card text-center" >
+  <div class="card-header">
+    <b>SOUTH INDIAN THALI</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">The South Indian thali is a culinary delight that showcases the rich and diverse flavors of South India on a single platter. Typically served on a banana leaf, the thali comprises an array of dishes that cater to all taste preferences. It includes staple items like sambar (a tangy lentil soup), rasam (a spicy tamarind soup), a variety of vegetable curries, coconut-based chutneys, and crisp papadams. The star of the thali is often the aromatic and fluffy rice, accompanied by an assortment of delectable accompaniments such as tangy pickles and cooling yogurt. The use of aromatic spices like curry leaves, mustard seeds, and asafoetida imparts a unique South Indian essence to the thali, creating a symphony of flavors that captivates the taste buds. This culinary experience reflects the region's cultural diversity and showcases the artistry of South Indian cuisine.</p>
+  </div>
+  </div>
+</div>
+<br>
+
+<div id="12" class="card text-center" >
+  <div class="card-header">
+    <b>BIRINAYI</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Biryani, a legendary dish with roots deeply embedded in Indian and Middle Eastern cuisine, is a fragrant and flavorful rice preparation that has earned global acclaim. Comprising basmati rice, succulent meat (often chicken, mutton, or beef), aromatic spices, and herbs, biryani is a culinary masterpiece that varies in style across regions. Each grain of rice is infused with the essence of spices, and the layered cooking technique ensures a harmonious blend of textures and tastes. Whether it's the Hyderabadi Dum Biryani, Lucknawi Biryani, or Kolkata Biryani, each variant has its unique charm, setting it apart. The tantalizing aroma and the interplay of spices make biryani not just a meal but a cultural celebration on a plate, enjoyed by food enthusiasts worldwide.</p>
+  </div>
+
+</div>
+<br>
+<div id="13" class="card text-center" >
+  <div class="card-header">
+    <b>MUDDA PAPPU AVAKI</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Mudda Pappu Avakai is a traditional Andhra Pradesh dish that beautifully combines simplicity with bold flavors. "Mudda Pappu" refers to plain boiled toor dal, a staple lentil in South Indian cuisine, while "Avakai" is a spicy mango pickle. This unique dish involves mixing the boiled toor dal with the fiery Avakai pickle, resulting in a delightful fusion of lentils and tangy spice. The creamy texture of the dal complements the intense flavors of the pickle, creating a harmonious balance. Mudda Pappu Avakai is often served with steamed rice, and the combination showcases the vibrant taste profile that characterizes Andhra cuisine—spicy, tangy, and thoroughly satisfying to the palate. It's a testament to the regional culinary diversity that South India is renowned for.</p>
+  </div>
+
+</div>
+<br>
+<div id="14" class="card text-center" >
+  <div class="card-header">
+    <b>IDLI</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Idli, a beloved South Indian dish, is a steamed rice cake that has transcended regional boundaries to become a popular and wholesome breakfast option worldwide. Made from a batter of fermented rice and urad dal (black gram), idlis are known for their soft, spongy texture and mild taste. These round, white delicacies are not only light on the stomach but also a rich source of nutrients. Typically served with coconut chutney and sambar, idlis are a perfect marriage of simplicity and nutrition. The fermentation process not only enhances the flavor but also contributes to the idli's digestibility. This versatile dish has become a symbol of South Indian cuisine, celebrated for its health benefits and universal appeal.</p>
+ </div>
+
+</div>
+<br>
+<div id="15" class="card text-center" >
+  <div class="card-header">
+    <b>HALEEM</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">haleem holds a significant cultural and culinary importance, especially in regions with a strong Muslim presence. It is a cherished dish during the holy month of Ramadan, when it is consumed to break the day-long fast. Hyderabad, in particular, is renowned for its Haleem, and the city witnesses a surge in its popularity during the festive season.
+
+Indian Haleem typically features a generous mix of local spices, including cumin, coriander, and garam masala, adding a unique regional twist to the dish. Served hot and often accompanied by naan or roti, it brings people together in the spirit of communal dining. The preparation of haleem becomes a festive tradition, with families and communities coming together to share and savor this delectable dish, fostering a sense of unity and joy during special occasions in the Indian Muslim community.</p>
+ </div>
+
+</div>
+<br>
+<div id="16" class="card text-center" >
+  <div class="card-header">
+    <b>VADAPAV</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Vada Pav, often referred to as the "Indian Burger," is a popular street food originating from the bustling streets of Mumbai. This flavorful snack consists of a spicy and crispy deep-fried potato patty, known as the "vada," sandwiched within a soft pav (bread roll). The vada is typically made with mashed potatoes, seasoned with a blend of spices, and coated in gram flour batter before frying. The assembly is incomplete without accompanying chutneys, usually green chutney made from coriander and mint, and a garlic chutney for an extra kick. Vada Pav is not just a quick and delicious on-the-go snack; it's an iconic part of Mumbai's culinary landscape, symbolizing the city's vibrant street food culture.</p>
+    </div>
+
+</div>
+<br>
+<div id="17" class="card text-center" >
+  <div class="card-header">
+    <b>PUNJABI THALI</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">
+Punjabi Thali is a feast for the senses, reflecting the rich and robust flavors of Punjab, a northern Indian state known for its hearty cuisine. This culinary ensemble typically includes staples like buttery Dal Makhani (black lentils), creamy Shahi Paneer (cottage cheese in a rich tomato-based gravy), and robust Punjabi Chole (spiced chickpeas). Accompanied by fluffy naan or aromatic basmati rice, the thali showcases the mastery of Punjabi chefs in blending spices to create a symphony of tastes. The inclusion of pickles, raita, and a serving of lassi, a yogurt-based drink, adds layers of texture and flavor to this wholesome meal. The Punjabi Thali stands as a testament to the warm hospitality and hearty appetite that characterize the cuisine of Punjab. </p>
+ </div>
+
+</div>
+
+  <br>
+  <div id="18" class="card text-center" >
+  <div class="card-header">
+    <b>PONGAL</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Pongal, a traditional South Indian dish, holds a special place in the hearts and kitchens, especially during the harvest festival of the same name. This flavorful dish is a celebration of abundance and prosperity, made with freshly harvested rice and lentils, cooked together and seasoned with black pepper, cumin, ginger, and ghee. The addition of cashews and curry leaves enhances its texture and aroma. Pongal exists in two delightful variations – the sweet version, called "Sakkarai Pongal," incorporates jaggery and cardamom, while the savory version, known as "Ven Pongal," includes black pepper and ghee. Often garnished with grated coconut and served with coconut chutney and sambar, Pongal embodies the essence of South Indian culinary traditions and festive fervor.</p>
+    </div>
+
+</div>
+<br>
+  <br>
+  </div>
+{% endblock %}
+</body>
+</html>
