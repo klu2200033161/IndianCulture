@@ -22,5 +22,8 @@ def register(request):
     return render(request, 'Register.html')
 
 
+def states(request):
+    return render(request, 'States.html')
 
-
+def historical(request):
+    return render(request,'historicalcities.html')

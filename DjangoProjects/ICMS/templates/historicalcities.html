@@ -1,0 +1,154 @@
+{% extends 'Navbar1.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Famous Places</title>
+    <link rel="stylesheet" href="{% static 'path/to/bootstrap.min.css' %}">
+</head>
+<body>
+{% block body %}
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="#11">
+      <img src="{% static 'Historical cities/ahemdabad.jpg' %}" class="d-block w-100" alt="AHEMDABAD" height="625px">
+    </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#12">
+      <img src="{% static 'Historical cities/delhi.jpg' %}" class="d-block w-100" alt="DELHI" height="625px">
+    </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#13">
+      <img src="{% static 'Historical cities/kolkata.jpg' %}" class="d-block w-100" alt="KOLKATA" height="625px">
+    </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#14">
+      <img src="{% static 'Historical cities/lucknow.jpg' %}" class="d-block w-100" alt="LUCKNOW" height="625px">
+    </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#15">
+      <img src="{% static 'Historical cities/patna.jpg' %}" class="d-block w-100" alt="PATNA" height="625px">
+    </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#16">
+      <img src="{% static 'Historical cities/thanjavur.jpg' %}" class="d-block w-100" alt="THANJAVUR" height="625px">
+    </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#17  ">
+      <img src="{% static 'Historical cities/varanasi.jpg' %}" class="d-block w-100" alt="VARANASI" height="625px">
+    </a>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<script src="{% static 'path/to/jquery.min.js' %}"></script>
+<script src="{% static 'path/to/bootstrap.bundle.min.js' %}"></script>
+
+<script>
+$(document).ready(function(){
+
+    var interval = 1000;
+    function autoSlideCarousel() {
+        $('#carouselExample').carousel('next');
+    }
+    setInterval(autoSlideCarousel, interval);
+});
+</script>
+<div style="background-color:#924802;">
+<br><br>
+<center><h1 style="color:#F8F9F9;">SOME OF THE HISTORICAL CITIES IN INDIA</h1></center>
+<br>
+<div id="11" class="div11">
+<div class="card text-center" >
+  <div class="card-header">
+    <b>AHEMDABAD</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Due to its strategic location on a trade route which crossed the port-cities of Khambayat (Cambay), Surat, and Bharucha, and its proximity to the Sabarmati River, Ahmedabad was sought after by many kings and dynasties. It was founded by Sultan Ahmed Shah in 1411. Since then, it has expanded westward beyond the walled city to areas across the Sabarmati River, forming the newer part of Ahmedabad
+Click below to read more on the long history of this city.</p>
+  </div>
+  </div>
+</div>
+<br>
+
+<div id="12" class="card text-center" >
+  <div class="card-header">
+    <b>DELHI</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Delhi is no stranger to being at the centre of political power and cultural innovation. With a history that spans millennia, Delhi has appeared in mythology and legend, as well as in the expansive accounts left behind by generations of rulers, foreign emissaries, courtiers, poets, artists, and others who have passed through this beautiful capital city on the banks of the River Yamuna. Traces of this rich historical past are still alive in the many monuments that continue to inhabit corners of this bustling city.</p>
+  </div>
+
+</div>
+<br>
+<div id="13" class="card text-center" >
+  <div class="card-header">
+    <b>KOLKATA</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Before the advent of the British, present-day Kolkata was part of three villages - Sutanuti, Kalikata and Gobindapur. Job Charnock, often referred to as the Founder of Calcutta, saw the potential of the three villages. The English East India Company acquired the rights of these villages from a prominent zamindar (landlord), Sabarna Raychoudhari. Whereas the area around Fort William, known as the 'White Town' was inhabited by the European population of the city. </p>
+  </div>
+</div>
+<br>
+<div id="14" class="card text-center" >
+  <div class="card-header">
+    <b>LUCKNOW</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Lucknow‘s history begins from the time of the epics. In the middle ages, it came under the rule of the Delhi Sultanate and was under the control of the Sheikhzadas. From the Sheikhzadas, the region was taken over by the Nawabs. Under Nawab Asaf-ud-Daula, Lucknow became the capital of the Awadh province of the Mughal Empire. In 1856 Awadh was annexed by the British and was known as the United Provinces of Agra and Oudh.</p>
+ </div>
+
+</div>
+<br>
+<div id="15" class="card text-center" >
+  <div class="card-header">
+    <b>PATNA</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">The strategic location of Patna, nestled among the rivers Ganga, Son, Gandak and Punpun ensured the city’s political hegemony and gave it an edge in riverine trade. The city was the capital of the Shishunaga, Nanda, Maurya, Shunga, Kushana and Gupta dynasties, each of which left their imprint on the city. It continued as a center of trade even when it moved away from the political scene. It regained its political importance in the medieval and colonial periods. Patna was also actively involved in India’s struggle for independence.</p>
+ </div>
+
+</div>
+<br>
+<div id="16" class="card text-center" >
+  <div class="card-header">
+    <b>THANJAVUR</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">The city of Thanjavur or Tanjore (anglicised name) has a long history of occupation. Its history goes as far back as the Sangam period when the Cholas had their capital here. It then fell into the hands of the Nayakas of Vijayanagar and then the Maratha rulers, both of whom left their own mark on the city. The city has thus remained an important political and cultural centre throughout history.</p>
+    </div>
+
+</div>
+<br>
+<div id="17" class="card text-center" >
+  <div class="card-header">
+    <b>VARANASI</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Varanasi is often described as one of the oldest continuously inhabited cities in the world. It’s unique geographical location has ensured that it is a thriving centre for both trade and learning. Rulers have come and gone, while Varanasi has endured through the ravages of time.</p>
+ </div>
+
+</div>
+<br>
+
+</div>
+  <br>
+  </div>
+{% endblock %}
+</body>
+</html>
