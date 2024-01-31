@@ -30,5 +30,8 @@ def classicaldances(request):
 def festivals(request):
     return render(request, 'festivals.html')
 
+def states(request):
+    return render(request, 'States.html')
 
-
+def historical(request):
+    return render(request,'historicalcities.html')
