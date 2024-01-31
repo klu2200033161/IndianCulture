@@ -1,0 +1,157 @@
+{% extends 'Navbar1.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Famous Places</title>
+    <link rel="stylesheet" href="{% static 'path/to/bootstrap.min.css' %}">
+</head>
+<body>
+{% block body %}
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="#11">
+      <img src="{% static 'festivals/diwali.jpg' %}" class="d-block w-100" alt="diwali" height="625px" style="background-repeat:no-repeat; background-size:cover;">
+    </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#12">
+      <img src="{% static 'festivals/sankranthi.jpg' %}" class="d-block w-100" alt="sankranthi" height="625px" style="background-repeat:no-repeat; background-size:cover;">
+      </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#13">
+      <img src="{% static 'festivals/navaratri.jpg' %}" class="d-block w-100" alt="navaratri" height="625px" style="background-repeat:no-repeat; background-size:cover;">
+    </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#14">
+      <img src="{% static 'festivals/holi.jpg' %}" class="d-block w-100" alt="holi" height="625px" style="background-repeat:no-repeat; background-size:cover;">
+    </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#15">
+      <img src="{% static 'festivals/Eid.jpg' %}" class="d-block w-100" alt="Eid" height="625px" style="background-repeat:no-repeat; background-size:cover;">
+    </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#16">
+      <img src="{% static 'festivals/dussehra.jpg' %}" class="d-block w-100" alt="dussera" height="625px" style="background-repeat:no-repeat; background-size:cover;">
+    </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#17">
+      <img src="{% static 'festivals/christmas.jpg' %}" class="d-block w-100" alt="christmas" height="625px" style="background-repeat:no-repeat; background-size:cover;">
+    </a>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<script src="{% static 'path/to/jquery.min.js' %}"></script>
+<script src="{% static 'path/to/bootstrap.bundle.min.js' %}"></script>
+
+<script>
+$(document).ready(function(){
+
+    var interval = 1000;
+
+    // Function to auto-slide the carousel
+    function autoSlideCarousel() {
+        $('#carouselExample').carousel('next');
+    }
+
+    // Set the interval for auto-sliding
+    setInterval(autoSlideCarousel, interval);
+});
+</script>
+<div style="background-color:#924802;">
+<br><br>
+<center><h1 style="color:#F8F9F9;">FAMOUS CLASSICAL DANCES FROM INDIA</h1></center>
+<br>
+<div id="11" class="div11">
+<div class="card text-center" >
+  <div class="card-header">
+    <b>DIWALI</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Diwali, the Festival of Lights, celebrated in October or November, signifies the triumph of light over darkness and good over evil. Families illuminate their homes with oil lamps, exchange sweets, and perform prayers, particularly seeking the blessings of the goddess Lakshmi for prosperity. Communities come alive with vibrant decorations, rangoli, and dazzling firework displays. Symbolizing various religious events, Diwali unites Hindus, Jains, Sikhs, and Buddhists in a spirit of joy and togetherness. In contemporary times, there's a growing emphasis on eco-friendly celebrations, promoting sustainability. Diwali transcends religious boundaries, fostering a sense of shared cultural heritage and unity. The festival remains a time for family, reflection, and spreading the warmth of goodwill.</p>
+  </div>
+  </div>
+</div>
+<br>
+
+<div id="12" class="card text-center" >
+  <div class="card-header">
+    <b>SANKRANTHI</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Sankranti,is a harvest festival in India symbolizing the sun's transition into Capricorn. It holds agricultural importance, marking the harvesting season and expressing gratitude for a plentiful crop. Pongal, a traditional dish made from newly harvested crops, is a festive delight. The celebration is marked by colorful decorations, traditional music, and dance, creating a vibrant atmosphere. Kite flying is a popular tradition during Sankranti, symbolizing the joy of letting go of past troubles and embracing new beginnings. Families gather to share Pongal, fostering a sense of community and togetherness. The festival signifies the end of winter and the beginning of longer days, spreading warmth and renewal.</p>
+  </div>
+
+</div>
+<br>
+<div id="13" class="card text-center" >
+  <div class="card-header">
+    <b>NAVARATRI</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">
+Navaratri, a Hindu festival spanning nine nights, venerates the goddess Durga in her diverse forms, symbolizing the victory of good over evil. Celebrated through prayer, fasting, and devotion, each day is dedicated to a specific manifestation of the goddess. Colorful dance forms like Garba and Dandiya Raas are integral to the festivities, fostering community spirit and joy. The festival culminates in Dussehra, marking Lord Rama's triumph over the demon king Ravana. Families and communities come together, participating in rituals, cultural performances, and sharing festive meals, creating a sense of unity and devotion. Navaratri is not only a religious event but also a vibrant cultural celebration, embodying the diversity and spiritual richness of Hindu traditions.</p>
+  </div>
+
+</div>
+<br>
+<div id="14" class="card text-center" >
+  <div class="card-header">
+    <b>HOLI</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Holi, celebrated in March, is the exuberant Festival of Colors in Hindu culture. Rooted in religious tales, it symbolizes the triumph of good over evil and the arrival of spring. The festival is renowned for the playful throwing of vibrant colored powders and water, breaking down social barriers and fostering unity. Holi brings together people of all ages and backgrounds, transcending religious and social divides. Streets resonate with laughter, music, and joyous celebrations, creating a sense of community. Traditional sweets and treats are shared, enhancing the festive spirit. Holi not only honors legends like Radha and Krishna but also serves as a universal symbol of love, joy, and the vibrant spectrum of life.</p>
+ </div>
+
+</div>
+<br>
+<div id="15" class="card text-center" >
+  <div class="card-header">
+    <b>Eid al-Fitr</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Eid al-Fitr, celebrated by Muslims worldwide, marks the end of Ramadan, a month of fasting and spiritual reflection. This joyous occasion is steeped in religious significance, with special prayers, acts of charity (Zakat al-Fitr), and expressions of gratitude. Families gather for festive feasts, sharing traditional sweets and exchanging gifts. The cultural unity during Eid bridges diverse backgrounds, fostering a sense of community and reconciliation. Homes and neighborhoods come alive with lights and decorations, creating a joyous atmosphere. New clothes are worn, and children eagerly anticipate receiving "Eidi," monetary gifts. Eid al-Fitr encapsulates the values of compassion, generosity, and spiritual fulfillment, bringing Muslims together in shared celebrations of faith and unity.</p>
+ </div>
+
+</div>
+<br>
+<div id="16" class="card text-center" >
+  <div class="card-header">
+    <b>DUSSEHRA</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Dussehra, celebrated in September or October, symbolizes the victory of good over evil in Hindu mythology. The festival concludes the nine-day Navaratri celebrations. The day commemorates Lord Rama's triumph over the demon king Ravana, symbolizing righteousness prevailing over wickedness. Effigies of Ravana, Meghanada, and Kumbhakarna are burned in large ceremonial bonfires, called Ravana Dahan, marking the victory of virtue. Dussehra is also associated with the goddess Durga's victory over the buffalo demon Mahishasura. Families come together to witness processions, enjoy cultural performances, and exchange festive greetings. The festival extends messages of courage, righteousness, and the ultimate victory of good in the face of adversity.</p>
+    </div>
+
+</div>
+<br>
+<div id="17" class="card text-center" >
+  <div class="card-header">
+    <b>CHRISTMAS</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Christmas, celebrated on December 25th, is a festive occasion that holds immense significance in Christian traditions. It commemorates the birth of Jesus Christ, symbolizing hope, joy, and love. Families and communities come together for special church services, festive meals, and the exchange of gifts. Decorations such as Christmas trees, lights, and ornaments add to the festive spirit. Christmas carols and hymns resonate, creating a joyous atmosphere. The custom of gift-giving reflects the spirit of generosity and goodwill. Beyond religious observances, Christmas has become a cultural celebration embraced by people of various backgrounds, emphasizing themes of peace and togetherness during the holiday season. </p>
+ </div>
+
+</div>
+<br>
+  <br>
+  </div>
+{% endblock %}
+</body>
+</html>
