@@ -35,3 +35,30 @@ def states(request):
 
 def historical(request):
     return render(request,'historicalcities.html')
+
+def andhrapradesh(request):
+    return render(request,'andhra/andhrapradesh.html')
+
+def religions(request):
+    return render(request,'religions.html')
+
+def language(request):
+    return render(request,'language.html')
+
+def andhraclassical(request):
+    return render(request,'andhra/andhraclassical.html')
+
+def andhrafestivals(request):
+    return render(request,'andhra/andhrafestivals.html')
+
+def andhrareligion(request):
+    return render(request,'andhra/andhrareligion.html')
+
+def andhralanguage(request):
+    return render(request,'andhra/andhralanguage.html')
+
+def andhrafoods(request):
+    return render(request,'andhra/andhrafoods.html')
+
+def andhraveda(request):
+    return render(request,'andhra/andhraveda.html')

@@ -1,0 +1,55 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        .content-container {
+            display: flex;
+
+        }
+        .text-container {
+            margin-left: 20px; /* Adjust the margin as needed */
+        }
+
+         .content-container1 {
+            display: flex;
+            flex-direction:row-reverse;
+        }
+        .text-container1 {
+            margin-right: 20px;
+
+        }
+    </style>
+</head>
+<body style="background-color:#A0D198 ;">
+    {% block body %}
+    <div>
+     <a href="{% url 'andhrapradesh' %}" style="text-decoration: none; margin-right:1490px;"> <button type="button" style="border-radius:100px; font-size:20px; background-color:#924802; color:#ffffff;"><</button></a>
+    <h1>KUCHIPUDI</h1>
+        </div>
+    <div class="content-container">
+        <img src="{% static 'andhra/classicaldance.jpg' %}" alt="kuchipudi" style="width:800px; height:400px;">
+        <div class="text-container">
+            <h3>Kuchipudi, a classical dance form originating from the picturesque landscapes of Andhra Pradesh, is a cultural gem that has enraptured audiences for centuries. Rooted in the traditional artistry of the village of Kuchelapuram, this dance form seamlessly weaves together elements of dance and drama, creating a captivating narrative that reflects the cultural richness of its birthplace. Named after its origin, Kuchipudi has grown beyond geographical boundaries, making its mark as a symbol of grace, expression, and artistic finesse.</h3>
+<br><h3>
+Central to Kuchipudi's allure is its distinctive blend of Lasya and Tandava styles, embodying the delicate and vigorous aspects of movement. The dancer's expressive storytelling involves intricate footwork, intricate hand gestures known as Mudras, and dynamic facial expressions. The traditional costumes, adorned with vibrant hues, along with elaborate makeup, contribute to the visual spectacle, making Kuchipudi a feast for the senses.</h3>
+        </div>
+    </div>
+
+<br><br>
+
+     <div class="content-container1">
+        <img src="{% static 'andhra/classicaldance2.jpg' %}" alt="kuchipudi2" style="width:800px; height:400px;">
+        <div class="text-container1">
+            <h3>Kuchipudi, a classical dance form originating from the picturesque landscapes of Andhra Pradesh, is a cultural gem that has enraptured audiences for centuries. Rooted in the traditional artistry of the village of Kuchelapuram, this dance form seamlessly weaves together elements of dance and drama, creating a captivating narrative that reflects the cultural richness of its birthplace. Named after its origin, Kuchipudi has grown beyond geographical boundaries, making its mark as a symbol of grace, expression, and artistic finesse.</h3>
+<br><h3>
+Central to Kuchipudi's allure is its distinctive blend of Lasya and Tandava styles, embodying the delicate and vigorous aspects of movement. The dancer's expressive storytelling involves intricate footwork, intricate hand gestures known as Mudras, and dynamic facial expressions. The traditional costumes, adorned with vibrant hues, along with elaborate makeup, contribute to the visual spectacle, making Kuchipudi a feast for the senses.</h3>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+</html>

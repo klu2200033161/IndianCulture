@@ -2,6 +2,7 @@ from django.contrib import admin
 from django.urls import path
 from .views import *
 
+
 urlpatterns = [
     path('', home, name='home'),
     path('login/', loginpage, name='loginpage'),
@@ -22,4 +23,14 @@ urlpatterns = [
     path('cdance/',classicaldances,name='classicaldances'),
     path('fest/',festivals,name='festivals'),
     path('foods/',foods,name='foods'),
+    path('andra/',andhrapradesh,name='andhrapradesh'),
+    path('religions/',religions,name='religions'),
+    path('lang/',language,name='language'),
+    path('andhrac/',andhraclassical,name='andhraclassical'),
+    path('andhraf/',andhrafestivals,name='andhrafestivals'),
+    path('andhrar/',andhrareligion,name='andhrareligion'),
+    path('andhral/',andhralanguage,name='andhralanguage'),
+    path('andhraf/',andhrafoods,name='andhrafoods'),
+    path('andhrav/',andhraveda,name='andhraveda'),
 ]
+

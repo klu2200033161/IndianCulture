@@ -1,0 +1,174 @@
+
+{% extends 'Navbar1.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Famous Places</title>
+    <link rel="stylesheet" href="{% static 'path/to/bootstrap.min.css' %}">
+</head>
+<body>
+{% block body %}
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="#11">
+      <img src="{% static 'religion/hinduism.jpg' %}" class="d-block w-100" alt="hinduism" height="625px" style="background-repeat:no-repeat; background-size:cover;">
+    </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#12">
+      <img src="{% static 'religion/islam.jpg' %}" class="d-block w-100" alt="islam" height="625px" style="background-repeat:no-repeat; background-size:cover;">
+      </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#13">
+      <img src="{% static 'religion/christian.jpg' %}" class="d-block w-100" alt="christianity" height="625px" style="background-repeat:no-repeat; background-size:cover;">
+    </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#14">
+      <img src="{% static 'religion/judaism.jpg' %}" class="d-block w-100" alt="judaism" height="625px" style="background-repeat:no-repeat; background-size:cover;">
+    </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#15">
+      <img src="{% static 'religion/buddhism.jpg' %}" class="d-block w-100" alt="buddism" height="625px" style="background-repeat:no-repeat; background-size:cover;">
+    </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#16">
+      <img src="{% static 'religion/jainism.jpg' %}" class="d-block w-100" alt="jainism" height="625px" style="background-repeat:no-repeat; background-size:cover;">
+    </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#17">
+      <img src="{% static 'religion/sikhism.jpg' %}" class="d-block w-100" alt="sikhism" height="625px" style="background-repeat:no-repeat; background-size:cover;">
+    </a>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<script src="{% static 'path/to/jquery.min.js' %}"></script>
+<script src="{% static 'path/to/bootstrap.bundle.min.js' %}"></script>
+
+<script>
+$(document).ready(function(){
+
+    var interval = 1000;
+
+    // Function to auto-slide the carousel
+    function autoSlideCarousel() {
+        $('#carouselExample').carousel('next');
+    }
+
+    // Set the interval for auto-sliding
+    setInterval(autoSlideCarousel, interval);
+});
+</script>
+<div style="background-color:#924802;">
+<br><br>
+<center><h1 style="color:#F8F9F9;">FAMOUS CLASSICAL DANCES FROM INDIA</h1></center>
+<br>
+<div id="11" class="div11">
+<div class="card text-center" >
+  <div class="card-header">
+    <b>HINDUISM</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Hinduism is a complex and ancient religious and philosophical tradition that originated in the Indian subcontinent. It encompasses a vast array of beliefs, practices, and rituals, with no single founder or scripture. Central themes include the concepts of dharma (moral and social duty), karma (the law of cause and effect), and moksha (liberation from the cycle of rebirth). Hinduism recognizes a multitude of deities, each representing different facets of the divine. Sacred texts such as the Vedas, Upanishads, and Bhagavad Gita provide spiritual guidance. Hinduism is characterized by its tolerance, diversity, and acceptance of various paths to spiritual realization, making it a deeply ingrained and vibrant cultural force in the Indian subcontinent and beyond.</p>
+  </div>
+  </div>
+</div>
+<br>
+
+<div id="12" class="card text-center" >
+  <div class="card-header">
+    <b>ISLAM</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">
+Islam, introduced to India in the 7th century, has played a significant role in shaping the country's cultural, social, and historical landscape. India is home to one of the world's largest Muslim populations, reflecting the diversity within the Islamic community. The Mughal Empire, which ruled over India for centuries, left a lasting architectural legacy, including the iconic Taj Mahal. Islam's influence is also evident in India's art, literature, and cuisine, contributing to the vibrant tapestry of the nation. Despite occasional historical tensions, India remains a harmonious blend of various religious and cultural traditions, with Islam contributing to the country's rich pluralistic heritage. Today, India is home to numerous mosques, educational institutions, and a thriving Muslim community that coexists with other religious groups, fostering unity in diversity.</p>
+  </div>
+
+</div>
+<br>
+<div id="13" class="card text-center" >
+  <div class="card-header">
+    <b>CHRISTIANITY</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">
+Christianity in India has a rich history dating back to the arrival of the Apostle Thomas in the 1st century. The faith gained prominence with European colonization but has since become an integral part of India's diverse religious landscape. Indian Christians, spread across various denominations, contribute significantly to the nation's cultural, educational, and social fabric. The community has produced influential figures in politics, literature, and philanthropy. The Indian Christian tradition is marked by a blend of indigenous cultural elements and global Christian practices. Despite challenges, including occasional religious tensions, the Christian community continues to play a vital role in India's pluralistic society, promoting values of love, compassion, and social justice.</p>
+  </div>
+
+</div>
+<br>
+<div id="14" class="card text-center" >
+  <div class="card-header">
+    <b>JUDAISM</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text"> Judaism, while not a major religious presence in India, has a small but historically significant community in the country. The Jewish presence in India dates back centuries, with the Cochin Jews being one of the oldest communities. They have contributed to India's cultural tapestry and are known for maintaining their distinct traditions.
+
+In present times, India is home to various Jewish communities, including the Bene Israel and Baghdadi Jews. Mumbai has a notable Jewish community, with synagogues like the Keneseth Eliyahoo and Magen David. India, known for its diversity and pluralism, has generally provided a welcoming environment for religious coexistence, allowing Jewish communities to preserve their traditions while engaging with the broader cultural milieu.</p>
+ </div>
+
+</div>
+<br>
+<div id="15" class="card text-center" >
+  <div class="card-header">
+    <b>BUDDHISM</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text"> founded by Siddhartha Gautama, the Buddha, in the 6th century BCE, has deep historical and cultural roots in India. Born in Lumbini (in present-day Nepal), the Buddha attained enlightenment in Bodh Gaya, Bihar, marking the beginning of his teachings.
+
+In India, Buddhism flourished for several centuries and played a pivotal role in shaping the nation's religious and philosophical landscape. The Buddha's teachings, encapsulated in the Four Noble Truths and the Eightfold Path, emphasized the cessation of suffering through ethical conduct, mental discipline, and wisdom.
+
+Historically, India has been home to major Buddhist centers such as Sarnath, where the Buddha delivered his first sermon, and Nalanda, an ancient center of learning. Emperor Ashoka, a significant patron of Buddhism, propagated its principles across the Indian subcontinent and beyond.</p>
+ </div>
+
+</div>
+<br>
+<div id="16" class="card text-center" >
+  <div class="card-header">
+    <b>JAINISM</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">
+Jainism, an ancient Indian religion, has deep historical and philosophical roots in the country. Founded by Lord Mahavira in the 6th century BCE, Jainism shares historical and cultural ties with its contemporary, Buddhism. The core tenets of Jainism revolve around non-violence (ahimsa), truth (satya), non-stealing (asteya), celibacy (brahmacharya), and non-attachment (aparigraha).
+
+Jainism has significantly influenced India's spiritual and ethical landscape. The emphasis on non-violence has made Jains renowned for their commitment to vegetarianism and a lifestyle that minimizes harm to all living beings. The practice of asceticism and rigorous self-discipline is also a hallmark of Jain philosophy.
+
+Jainism has left an indelible mark on Indian art and architecture.</p>
+    </div>
+
+</div>
+<br>
+<div id="17" class="card text-center" >
+  <div class="card-header">
+    <b>SIKHISM</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Sikhism, a distinct monotheistic religion, was founded by Guru Nanak in the 15th century in the Indian subcontinent. Rooted in the principles of equality, justice, and devotion to one God, Sikhism emerged as a response to the prevailing social and religious inequalities of the time.
+
+The Guru Granth Sahib, the central religious scripture, serves as the eternal Guru for Sikhs. Sikhism promotes the belief in the oneness of God, equality of all human beings, and selfless service to others. The principles of honest living, humility, and compassion guide Sikh ethics.
+
+Sikhism has a significant historical and cultural impact on India, particularly in the state of Punjab, where the majority of Sikhs reside. </p>
+ </div>
+
+</div>
+<br>
+  <br>
+  </div>
+{% endblock %}
+</body>
+</html>

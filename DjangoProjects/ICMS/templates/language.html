@@ -1,0 +1,170 @@
+{% extends 'Navbar1.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Famous Places</title>
+    <link rel="stylesheet" href="{% static 'path/to/bootstrap.min.css' %}">
+</head>
+<body>
+{% block body %}
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="#11">
+      <img src="{% static 'languages/hindi.jpg' %}" class="d-block w-100" alt="hindi" height="625px">
+    </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#12">
+      <img src="{% static 'languages/telugu.png' %}" class="d-block w-100" alt="telugu" height="625px">
+      </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#13">
+      <img src="{% static 'languages/urdu.jpg' %}" class="d-block w-100" alt="urdu" height="625px">
+    </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#14">
+      <img src="{% static 'languages/tamil.jpg' %}" class="d-block w-100" alt="tamil" height="625px">
+    </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#15">
+      <img src="{% static 'languages/marathi.png' %}" class="d-block w-100" alt="marathi" height="625px">
+    </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#16">
+      <img src="{% static 'languages/gujarati.png' %}" class="d-block w-100" alt="gugarati" height="625px">
+    </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#17">
+      <img src="{% static 'languages/bengali.jpg' %}" class="d-block w-100" alt="bengali" height="625px">
+    </a>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<script src="{% static 'path/to/jquery.min.js' %}"></script>
+<script src="{% static 'path/to/bootstrap.bundle.min.js' %}"></script>
+
+<script>
+$(document).ready(function(){
+
+    var interval = 1000;
+
+    // Function to auto-slide the carousel
+    function autoSlideCarousel() {
+        $('#carouselExample').carousel('next');
+    }
+
+    // Set the interval for auto-sliding
+    setInterval(autoSlideCarousel, interval);
+});
+</script>
+<div style="background-color:#924802;">
+<br><br>
+<center><h1 style="color:#F8F9F9;">FAMOUS CLASSICAL DANCES FROM INDIA</h1></center>
+<br>
+<div id="11" class="div11">
+<div class="card text-center" >
+  <div class="card-header">
+    <b>HINDI</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Hindi, one of the official languages of India, holds a pivotal position in the country's linguistic and cultural landscape. Derived from Sanskrit, Hindi is spoken by a substantial portion of India's population, particularly in the northern and central regions. It serves as a lingua franca, fostering communication across diverse linguistic communities. Hindi, written in the Devanagari script, is the medium for numerous literary and artistic expressions, including films and music, contributing significantly to India's cultural identity. The government promotes Hindi as a means of national integration, alongside recognizing the importance of regional languages. While India celebrates its linguistic diversity, Hindi remains a unifying force, reflecting the synthesis of tradition and modernity in the country's cultural mosaic.</p>
+  </div>
+  </div>
+</div>
+<br>
+
+<div id="12" class="card text-center" >
+  <div class="card-header">
+    <b>TELUGU</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">
+Telugu, a Dravidian language spoken by over 80 million people, holds a prominent place in India's linguistic diversity. Primarily spoken in the states of Andhra Pradesh and Telangana, Telugu is one of the four major languages in the Indian subcontinent. Its rich literary tradition, cultural significance, and contributions to Indian arts underscore its importance in shaping the country's identity. Beyond being a means of communication, Telugu serves as a vital thread in the diverse tapestry of languages and cultures that characterize India.
+
+Efforts to promote and preserve Telugu continue in the modern era through educational initiatives, media, and cultural programs. As India embraces its cultural mosaic, languages like Telugu not only reflect regional identity but also contribute to the broader narrative of unity in diversity, showcasing the coexistence of various linguistic and cultural expressions within the nation.</p>
+  </div>
+
+</div>
+<br>
+<div id="13" class="card text-center" >
+  <div class="card-header">
+    <b>URDU</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">
+Urdu, a language with roots deeply embedded in India's history, culture, and literature, is recognized as one of the country's official languages. With significant contributions to poetry, literature, and classical arts, Urdu has played a crucial role in shaping India's cultural landscape. It has historically served as a bridge between communities, fostering a sense of unity among people of diverse linguistic backgrounds.
+
+Urdu's cultural richness extends beyond its linguistic boundaries, permeating music, cinema, and daily life in various regions of India. Despite having Persian and Arabic influences, Urdu has evolved as a distinctly Indian language, contributing to the pluralistic identity that defines the nation. Efforts to preserve and promote Urdu continue, emphasizing its importance in India's vibrant tapestry of languages and its role in fostering cultural harmony.</p>
+  </div>
+
+</div>
+<br>
+<div id="14" class="card text-center" >
+  <div class="card-header">
+    <b>TAMIL</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Tamil, a classical language with an ancient heritage, holds a significant place in the linguistic and cultural mosaic of India. Predominantly spoken in the southern Indian state of Tamil Nadu and parts of Sri Lanka, Malaysia, and Singapore, Tamil has a rich literary tradition dating back over two millennia. The language boasts a vast body of classical literature, intricate poetry, and a unique script that adds to its distinctiveness.
+
+Tamil culture, with its vibrant traditions and contributions to music, dance, and philosophy, has made a profound impact on the Indian subcontinent. Beyond its regional importance, Tamil is recognized as one of the 22 scheduled languages of India, underlining its national significance. Efforts to promote Tamil education and preserve its cultural heritage reflect the language's enduring role in India's cultural tapestry, showcasing the country's commitment to celebrating linguistic diversity.</p>
+ </div>
+
+</div>
+<br>
+<div id="15" class="card text-center" >
+  <div class="card-header">
+    <b>MARATHI</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Marathi, a prominent language spoken in the state of Maharashtra, stands as a vital representative of India's linguistic diversity. With over 80 million speakers, Marathi has a rich cultural and historical heritage that reflects the vibrant traditions of the region. The language has been a powerful vehicle for literature, with a significant contribution to various literary genres, including poetry, plays, and novels. Marathi's historical roots and its modern relevance make it an integral part of the larger Indian linguistic landscape.
+
+Beyond its linguistic significance, Marathi culture has left an indelible mark on India's social, artistic, and political spheres. The language's influence extends to various art forms, music, cinema, and the state's unique cultural practices. Efforts to preserve and promote Marathi language and culture highlight its importance in contributing to the diverse tapestry of languages that collectively define the rich mosaic of India.</p>
+ </div>
+
+</div>
+<br>
+<div id="16" class="card text-center" >
+  <div class="card-header">
+    <b>GUJARATI</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Gujarati, spoken predominantly in the western state of Gujarat, is a language that encapsulates the rich cultural heritage of the region. Boasting over 55 million speakers, Gujarati has made substantial contributions to literature, art, and commerce. The language's historical significance is underscored by its association with the father of the nation, Mahatma Gandhi, who hailed from Gujarat and played a pivotal role in India's struggle for independence.
+
+Gujarati's influence extends beyond regional boundaries, with a diaspora that has carried the language and culture to various parts of the world. The linguistic and cultural diversity of India finds expression in Gujarati traditions, festivals, and cuisine. As a testament to its enduring relevance, efforts to preserve and promote Gujarati in education and media showcase its integral role in shaping the multifaceted identity of India.</p>
+    </div>
+
+</div>
+<br>
+<div id="17" class="card text-center" >
+  <div class="card-header">
+    <b>BENGALI</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">
+Bengali, the sixth most spoken language globally, is deeply entrenched in the cultural tapestry of India, particularly in the state of West Bengal and the neighboring country of Bangladesh. With a rich literary tradition dating back centuries, Bengali has produced some of the most influential poets, writers, and thinkers in the Indian subcontinent, making it a cornerstone of the region's intellectual heritage. The language is celebrated for its lyrical poetry, vibrant literature, and significant contributions to India's cultural landscape.
+
+Beyond its literary prowess, Bengali culture has made notable impacts on art, music, and cinema, earning the language a prominent place in India's diverse cultural milieu. The global diaspora of Bengali communities further emphasizes the language's enduring legacy. As a symbol of regional pride and a vital component of India's linguistic diversity, Bengali continues to flourish, evolving with the times while retaining its historical and cultural significance. </p>
+ </div>
+
+</div>
+  <br>
+  </div>
+{% endblock %}
+</body>
+</html>

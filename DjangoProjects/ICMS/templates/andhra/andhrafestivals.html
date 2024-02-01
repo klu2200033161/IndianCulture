@@ -1,0 +1,81 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        .content-container {
+            display: flex;
+
+        }
+        .text-container {
+            margin-left: 20px; /* Adjust the margin as needed */
+        }
+
+         .content-container1 {
+            display: flex;
+            flex-direction:row-reverse;
+        }
+        .text-container1 {
+            margin-right: 20px;
+
+        }
+    </style>
+</head>
+<body style="background-color:#A0D198 ;">
+    {% block body %}
+    <div>
+     <a href="{% url 'andhrapradesh' %}" style="text-decoration: none; margin-right:1490px;"> <button type="button" style="border-radius:100px; font-size:20px; background-color:#924802; color:#ffffff;"><</button></a>
+    <marquee><h1>FESTIVALS</h1></marquee>
+        </div>
+    <div class="content-container">
+        <img src="{% static 'andhra/ugadi.jpg' %}" alt="kuchipudi" style="width:1000px; height:400px;">
+        <div class="text-container">
+            <h2>UGADI</h2>
+            <h3>Ugadi, also known as Yugadi, is a traditional New Year's festival celebrated in the Andhra Pradesh. Typically falling in March or April, Ugadi marks the beginning of a new lunar calendar year. The festival is a time for new beginnings, symbolizing the triumph of light over darkness and the renewal of life. On Ugadi, people clean and decorate their homes, wear new clothes, and participate in various religious rituals to seek blessings for a prosperous and harmonious year ahead.</h3>
+<br><h3>
+A key element of Ugadi celebrations is the preparation and consumption of a special dish called "Ugadi Pachadi." This unique concoction consists of six different tastes - sweet, sour, bitter, salty, spicy, and astringent - symbolizing the various experiences one might encounter in the upcoming year. Each taste represents the different facets of life, teaching individuals to accept and embrace the diversity of experiences. Ugadi is not only a time for revelry but also a moment for reflection and spiritual contemplation as people welcome the New Year with hope, positivity, and a sense of cultural richness.
+
+
+
+
+
+</h3>
+        </div>
+    </div>
+
+<br><br>
+
+     <div class="content-container1">
+        <img src="{% static 'festivals/sankranthi.jpg' %}" alt="kuchipudi2" style="width:800px; height:400px;">
+        <div class="text-container1">
+            <h2>SANKRANTHI</h2>
+            <h3>
+Sankranti, also known as Makar Sankranti, is a vibrant and culturally significant festival celebrated in India, marking the transition of the sun into the zodiac sign of Capricorn. Falling typically on the 14th or 15th of January, this festival signifies the end of the winter solstice and the beginning of longer days. One of the most distinguishing features of Sankranti is the tradition of flying kites, symbolizing the joy and exuberance associated with the changing season. Families come together to celebrate with traditional sweets like sesame and jaggery-based treats, expressing gratitude for the harvest season and the arrival of warmer days.
+                <br><h3>
+Sankranti holds diverse regional variations, each adding its unique cultural touch to the festivities. In South India, it is known as Pongal, where people express gratitude to the Sun God for a bountiful harvest. In the western state of Gujarat, the festival takes the form of Uttarayan, a grand celebration with colorful kites filling the sky. Sankranti not only marks an astronomical event but also fosters a sense of unity, as people from different backgrounds come together to embrace the joyous spirit of the festival.
+
+
+
+
+
+</h3>
+        </div>
+    </div>
+
+<br><br>
+    <div class="content-container">
+        <img src="{% static 'andhra/ganesh.jpg' %}" alt="kuchipudi" style="width:1000px; height:400px;">
+        <div class="text-container">
+            <h2>GANESH CHATURDI</h2>
+            <h3>Ganesh Chaturthi, also known as Vinayaka Chaturthi, is a widely celebrated Hindu festival dedicated to Lord Ganesha, the remover of obstacles and the harbinger of wisdom and prosperity. Typically observed in late August or early September, this festival holds immense cultural and religious significance in India. The festivities commence with the installation of elaborately crafted clay idols of Lord Ganesha in homes and public pandals. Devotees offer prayers, perform rituals, and indulge in devotional songs and dances to seek the blessings of Lord Ganesha for success, good fortune, and the removal of obstacles in their endeavors.</h3>
+<br><h3>
+The highlight of Ganesh Chaturthi is the grand procession during the immersion of the Ganesha idols, known as Visarjan. Devotees gather in large numbers, singing hymns and bidding farewell to the beloved deity, who is believed to return to Mount Kailash, the abode of Lord Shiva and Goddess Parvati. The festival promotes community spirit and artistic expression, with artisans showcasing their creativity through intricate idol designs. Ganesh Chaturthi not only honors Lord Ganesha but also fosters a sense of unity, devotion, and cultural richness among the people who come together to celebrate this joyous occasion.</h3>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+</html>
