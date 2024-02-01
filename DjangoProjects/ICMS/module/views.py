@@ -35,3 +35,9 @@ def states(request):
 
 def historical(request):
     return render(request,'historicalcities.html')
+
+def vedas(request):
+    return render(request,'vedas.html')
+
+def rigveda(request):
+    return render(request,'rigveda.html')

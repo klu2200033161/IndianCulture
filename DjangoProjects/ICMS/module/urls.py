@@ -22,4 +22,6 @@ urlpatterns = [
     path('cdance/',classicaldances,name='classicaldances'),
     path('fest/',festivals,name='festivals'),
     path('foods/',foods,name='foods'),
+    path('vedas/', vedas,name='vedas'),
+    path('rigveda/',rigveda,name='rigveda'),
 ]
