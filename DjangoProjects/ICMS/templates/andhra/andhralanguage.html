@@ -1,13 +1,46 @@
-
 {% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        .content-container {
+            display: flex;
+
+        }
+        .text-container {
+            margin-left: 20px; /* Adjust the margin as needed */
+        }
+
+         .content-container1 {
+            display: flex;
+            flex-direction:row-reverse;
+        }
+        .text-container1 {
+            margin-right: 20px;
+
+        }
+    </style>
 </head>
-<body>
-{% block body %}
-<h1>CLASSICAL DANCES</h1>
-{% endblock %}
+<body style="background-color:#A0D198 ;">
+    {% block body %}
+    <div>
+     <a href="{% url 'andhrapradesh' %}" style="text-decoration: none; margin-right:1490px;"> <button type="button" style="border-radius:100px; font-size:20px; background-color:#924802; color:#ffffff;"><</button></a>
+    <marquee><h1>LANGUAGE</h1></marquee>
+        </div>
+    <div class="content-container">
+        <img src="{% static 'languages/telugu.png' %}" alt="telugu" style="width:1000px; height:400px;">
+        <div class="text-container">
+            <h3>Telugu, one of the Dravidian languages, holds a pivotal position in the cultural identity of Andhra Pradesh. Renowned for its rich literary and artistic heritage, Telugu is the official language of the state and serves as a unifying force among its diverse communities. The classical literature of Andhra Pradesh, with works like the iconic "Andhra Mahabharatam" by Nannayya Bhattaraka, exemplifies the linguistic and literary prowess of the Telugu people.
+</h3>
+<br><h3>
+Beyond literature, Telugu finds expression in various forms of art and entertainment, notably in the vibrant world of Telugu cinema, popularly known as Tollywood. With a vast audience both within and beyond the state, Telugu cinema has made significant contributions to Indian cinema, producing numerous critically acclaimed films and actors. The language is also central to the cultural celebrations of Andhra Pradesh, with Telugu festivals like Ugadi, Sankranthi, and Bonalu being celebrated with traditional fervor, strengthening the bond between the language and the cultural heritage of the region.
+</h3>
+        </div>
+    </div>
+    {% endblock %}
 </body>
 </html>

@@ -36,7 +36,7 @@ def states(request):
 def historical(request):
     return render(request,'historicalcities.html')
 
-<<<<<<< HEAD
+
 def andhrapradesh(request):
     return render(request,'andhra/andhrapradesh.html')
 
@@ -63,10 +63,10 @@ def andhrafoods(request):
 
 def andhraveda(request):
     return render(request,'andhra/andhraveda.html')
-=======
+
 def vedas(request):
     return render(request,'vedas.html')
 
 def rigveda(request):
     return render(request,'rigveda.html')
->>>>>>> ba0639fd05a749a2123d47ba601626a9be1edacb
+

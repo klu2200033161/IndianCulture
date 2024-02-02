@@ -23,7 +23,6 @@ urlpatterns = [
     path('cdance/',classicaldances,name='classicaldances'),
     path('fest/',festivals,name='festivals'),
     path('foods/',foods,name='foods'),
-<<<<<<< HEAD
     path('andra/',andhrapradesh,name='andhrapradesh'),
     path('religions/',religions,name='religions'),
     path('lang/',language,name='language'),
@@ -33,9 +32,7 @@ urlpatterns = [
     path('andhral/',andhralanguage,name='andhralanguage'),
     path('andhraf/',andhrafoods,name='andhrafoods'),
     path('andhrav/',andhraveda,name='andhraveda'),
-=======
     path('vedas/', vedas,name='vedas'),
     path('rigveda/',rigveda,name='rigveda'),
->>>>>>> ba0639fd05a749a2123d47ba601626a9be1edacb
 ]
 
