@@ -63,7 +63,6 @@ def andhrafoods(request):
 
 def andhraveda(request):
     return render(request,'andhra/andhraveda.html')
-
 def vedas(request):
     return render(request,'vedas.html')
 
