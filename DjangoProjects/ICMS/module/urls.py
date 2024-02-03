@@ -31,7 +31,6 @@ urlpatterns = [
     path('andhrar/',andhrareligion,name='andhrareligion'),
     path('andhral/',andhralanguage,name='andhralanguage'),
     path('andhraf/',andhrafoods,name='andhrafoods'),
-    path('andhrav/',andhraveda,name='andhraveda'),
     path('vedas/', vedas,name='vedas'),
     path('rigveda/',rigveda,name='rigveda'),
 ]

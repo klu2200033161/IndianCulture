@@ -61,8 +61,6 @@ def andhralanguage(request):
 def andhrafoods(request):
     return render(request,'andhra/andhrafoods.html')
 
-def andhraveda(request):
-    return render(request,'andhra/andhraveda.html')
 def vedas(request):
     return render(request,'vedas.html')
 
