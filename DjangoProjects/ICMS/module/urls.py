@@ -33,5 +33,6 @@ urlpatterns = [
     path('andhraf/',andhrafoods,name='andhrafoods'),
     path('vedas/', vedas,name='vedas'),
     path('rigveda/',rigveda,name='rigveda'),
+    path('map/',map,name='map'),
 ]
 

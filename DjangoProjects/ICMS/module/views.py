@@ -67,3 +67,16 @@ def vedas(request):
 def rigveda(request):
     return render(request,'rigveda.html')
 
+from flask import Flask, render_template
+
+module1 = Flask(__name__)
+
+def map(request):
+    return render(request,'map.html')
+
+if __name__ == '__main__':
+    module1.run(debug=True)
+
+
+
+

@@ -1,0 +1,83 @@
+{% include 'navstates.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive India Map</title>
+    <!-- Include Leaflet CSS and JavaScript -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+{% block body %}
+<div id="map" style="height: 700px;"></div>
+
+<script>
+    // Create a map centered on India
+    var map = L.map('map').setView([20.5937, 78.9629], 5);
+
+    // Add OpenStreetMap as the base layer
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Add markers for each state
+    var states = {
+        'Andhra Pradesh': {coords: [15.9129, 79.7400], url: '/andra/'},
+        'Arunachal Pradesh': {coords: [27.1004, 93.6167], url: 'arunachal_pradesh_page.html'},
+        'Assam': {coords: [26.2006, 92.9376], url: 'assam_page.html'},
+        'Bihar': {coords: [25.0961, 85.3131], url: 'bihar_page.html'},
+        'Chhattisgarh': {coords: [21.2787, 81.8661], url: 'chhattisgarh_page.html'},
+        'Goa': {coords: [15.2993, 74.1240], url: 'goa_page.html'},
+        'Gujarat': {coords: [22.2587, 71.1924], url: 'gujarat_page.html'},
+        'Haryana': {coords: [29.0588, 76.0856], url: 'haryana_page.html'},
+        'Himachal Pradesh': {coords: [31.1048, 77.1734], url: 'himachal_pradesh_page.html'},
+        'Jharkhand': {coords: [23.6102, 85.2799], url: 'jharkhand_page.html'},
+        'Karnataka': {coords: [15.3173, 75.7139], url: 'vedas'},
+        'Kerala': {coords: [10.8505, 76.2711], url: 'kerala_page.html'},
+        'Madhya Pradesh': {coords: [22.9734, 78.6569], url: 'madhya_pradesh_page.html'},
+        'Maharashtra': {coords: [19.7515, 75.7139], url: 'maharashtra_page.html'},
+        'Manipur': {coords: [24.6637, 93.9063], url: 'manipur_page.html'},
+        'Meghalaya': {coords: [25.4670, 91.3662], url: 'meghalaya_page.html'},
+        'Mizoram': {coords: [23.1645, 92.9376], url: 'mizoram_page.html'},
+        'Nagaland': {coords: [26.1584, 94.5624], url: 'nagaland_page.html'},
+        'Odisha': {coords: [20.9517, 85.0985], url: 'odisha_page.html'},
+        'Punjab': {coords: [31.1471, 75.3412], url: 'punjab_page.html'},
+        'Rajasthan': {coords: [27.0238, 74.2179], url: 'rajasthan_page.html'},
+        'Sikkim': {coords: [27.5330, 88.5122], url: 'sikkim_page.html'},
+        'Tamil Nadu': {coords: [11.1271, 78.6569], url: 'tamil_nadu_page.html'},
+        'Telangana': {coords: [18.1124, 79.0193], url: 'telangana_page.html'},
+        'Tripura': {coords: [23.9408, 91.9882], url: 'tripura_page.html'},
+        'Uttar Pradesh': {coords: [26.8467, 80.9462], url: 'uttar_pradesh_page.html'},
+        'Uttarakhand': {coords: [30.0668, 79.0193], url: 'uttarakhand_page.html'},
+        'West Bengal': {coords: [22.9868, 87.8550], url: 'west_bengal_page.html'},
+        'Chandigarh': {coords: [30.7333, 76.7794], url: 'chandigarh_page.html'},
+    };
+
+    for (var state in states) {
+        var stateInfo = states[state];
+
+        // Create a marker with a popup
+        var marker = L.marker(stateInfo.coords).addTo(map).bindPopup(state);
+
+        // Add a click event listener to the marker
+        marker.on('click', function (e) {
+            // Get the state name from the popup
+            var stateClicked = e.target.getPopup().getContent();
+
+            // Check which state was clicked and navigate accordingly
+            if (stateClicked === 'Andhra Pradesh') {
+                window.location.href = '/andra/';
+            }
+            else if (stateClicked === 'Karnataka') {
+                window.location.href = '/vedas/';
+           }
+            // Add more conditions for additional states as needed
+        });
+    }
+
+</script>
+{% endblock %}
+</body>
+</html>
