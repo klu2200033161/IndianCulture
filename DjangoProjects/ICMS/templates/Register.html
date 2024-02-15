@@ -62,9 +62,9 @@
   {% endfor %}
 
 {% endif %}
-        <div class="container1">
-            <div class="bodycontainer">
-                <h1>Signup-IndianCulture</h1>
+        <div class="container1" style="display:flex; align-items:center; justify-content:center; background-color:#ffffff; border-radius:20px;">
+            <div class="bodycontainer" style="margin-left:20px; margin-right:20px;">
+                <h1>Signup <span style="margin-left:300px;"><a href="{% url 'home' %}"><button type="button">x</button></a></span></h1>
                 <form method="post" action="{% url 'signup1' %}">
                     {% csrf_token %}
                     <label>Usename</label><br>
