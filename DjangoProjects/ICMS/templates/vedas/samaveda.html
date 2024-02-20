@@ -1,0 +1,108 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vedas</title>
+    <style>
+         body {
+            text-align: center;
+        }
+        .content-container {
+            display: flex;
+
+        }
+        .text-container {
+            margin-left: 20px; /* Adjust the margin as needed */
+            background-color:#FFFFFF;
+            border-radius:20px;
+            text-align: left;
+        }
+        .text-container:hover{
+              border: 3px solid #0D0E0E ;
+  transition: border-color 0.5s ease;
+        }
+
+         .content-container1 {
+            display: flex;
+            flex-direction:row-reverse;
+        }
+        .text-container1 {
+            margin-right: 20px;
+             background-color:#FFFFFF;
+            border-radius:20px;
+             text-align: left;
+        }
+         .text-container1:hover{
+              border: 3px solid #0D0E0E ;
+  transition: border-color 0.5s ease;
+
+    </style>
+</head>
+<body style="background-color:#924802 ;">
+    {% block body %}
+    <div>
+     <a href="{% url 'vedas' %}" style="text-decoration: none; margin-right:1490px;"> <button type="button" style="border-radius:100px; font-size:20px; background-color:#ffffff; color:#924802;"><</button></a>
+    <marquee><h1 style="color:#ffffff;">RIG-VEDA</h1></marquee>
+        <br>
+        </div>
+    <div class="content-container">
+        <img src="{% static 'vedas/Rig-Veda.png' %}" alt="kuchipudi" style="width:800px; height:400px;border:2px solid #FFFFFF;">
+        <div class="text-container">
+            <h3><br><br><br>
+->The Rigveda is one of the oldest sacred texts in the world, originating from ancient Indian literature.<br>
+->It consists of hymns and verses composed in Sanskrit.<br>
+->Considered foundational in Hinduism, it forms a significant part of Vedic literature.<br>
+->Comprises hymns dedicated to deities and natural forces.<br>
+->Provides insights into the religious and cultural landscape of ancient India.<br>
+->Continues to be revered in Hindu traditions today.<br>
+->Scholars study and interpret its verses to understand early religious and philosophical concepts in the Indian subcontinent.<br></h3>
+        </div>
+    </div>
+
+<br><br>
+
+     <div class="content-container1">
+        <img src="{% static 'vedas/rigveda2.jpg' %}" alt="kuchipudi2" style="width:800px; height:400px;border:2px solid #FFFFFF;">
+        <div class="text-container1">
+            <p style="font-size:18px"><b>1.Age and Authorship:</b><br><br>
+
+The Rigveda is believed to have been composed between 1500 and 1200 BCE, although some scholars suggest even earlier dates.
+The hymns were composed by different sages or seers known as "rishis."<br><br>
+<b>2.Structure:</b><br><br>
+
+The Rigveda consists of ten books or "Mandalas," and each Mandala is further divided into hymns or "suktas."
+There are a total of 1,028 hymns in the Rigveda.<br><br>
+                <b>3.Deities:</b><br><br>
+
+The hymns are dedicated to various deities such as Agni (the god of fire), Indra (the king of gods and god of thunder and rain), Varuna (the god of cosmic order), Mitra (associated with friendship and contracts), and others.
+The Vedic pantheon reflects the early stages of what would later become the Hindu pantheon.<br><br>
+<b>4.Themes:</b><br><br>
+
+The Rigveda addresses a wide range of themes, including cosmology, philosophy, rituals, morality, and the relationship between gods and humans.
+Many hymns are composed in praise of the forces of nature and the elements.<br><br><br>
+</p>
+        </div>
+    </div>
+<br>
+
+    <div class="content-container" >
+        <img src="{% static 'vedas/rigveda3.jpg' %}" alt="kuchipudi2" style="width:800px; height:400px;border:2px solid #FFFFFF;">
+        <div class="text-container" style="text-align:left">
+            <p style="font-size:18px">
+<b>5.Rituals and Sacrifices:</b><br><br>
+
+Rituals and sacrifices (yajnas) are frequently mentioned in the Rigveda. These rituals were performed by priests (hotris) to appease the gods and maintain cosmic order (rita).<br><br>
+<br><b>6.Philosophical Ideas:</b><br><br>
+
+The Rigveda contains the seeds of philosophical ideas that would later develop in Hinduism, such as the concept of Brahman (the ultimate reality) and the pursuit of knowledge (vidya).<br><br><br>
+<b>7.Language and Style:</b><br><br>
+
+The hymns are written in a sophisticated form of Sanskrit and are characterized by poetic and metrical excellence.<br><br><br>
+<b>8.Transmission:</b><br><br>
+
+The Rigveda has been preserved through oral tradition for many centuries before being eventually written down. The preservation of the text is considered a remarkable feat of memory and recitation.</p>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+</html>

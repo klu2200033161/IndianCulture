@@ -1,0 +1,105 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AtharvaVeda</title>
+    <style>
+         body {
+            text-align: center;
+        }
+        .content-container {
+            display: flex;
+
+        }
+        .text-container {
+            margin-left: 20px; /* Adjust the margin as needed */
+            background-color:#FFFFFF;
+            border-radius:20px;
+            text-align: left;
+        }
+        .text-container:hover{
+              border: 3px solid #0D0E0E ;
+  transition: border-color 0.5s ease;
+        }
+
+         .content-container1 {
+            display: flex;
+            flex-direction:row-reverse;
+        }
+        .text-container1 {
+            margin-right: 20px;
+             background-color:#FFFFFF;
+            border-radius:20px;
+             text-align: left;
+        }
+         .text-container1:hover{
+              border: 3px solid #0D0E0E ;
+  transition: border-color 0.5s ease;
+
+    </style>
+</head>
+<body style="background-color:#924802 ;">
+    {% block body %}
+    <div>
+     <a href="{% url 'vedas' %}" style="text-decoration: none; margin-right:1490px;"> <button type="button" style="border-radius:100px; font-size:20px; background-color:#ffffff; color:#924802;"><</button></a>
+    <marquee><h1 style="color:#ffffff;">ATHARVA-VEDA</h1></marquee>
+        <br>
+        </div>
+    <div class="content-container">
+        <img src="{% static 'vedas/atharva1.jpg' %}" alt="kuchipudi" style="width:800px; height:400px;border:2px solid #FFFFFF;">
+        <div class="text-container">
+            <h3><br><br>
+->The Atharvaveda is one of the four Vedas, alongside the Rigveda, Samaveda, and Yajurveda.<br>
+->It is also an ancient sacred text of Hinduism, composed in Sanskrit.<br>
+->Unlike the other Vedas, which primarily focus on rituals, hymns, and philosophical concepts, the Atharvaveda contains a diverse collection of materials.<br>
+->It includes hymns, incantations, charms, spells, and rituals.<br>
+->The content of the Atharvaveda covers a wide range of topics, including healing, magic, astrology, cosmology, social and domestic rituals, and philosophical reflections.<br>
+->Its verses address practical aspects of life, such as health, prosperity, protection against evil spirits, and solutions to various problems.<br>
+->The Atharvaveda is considered significant for its insights into ancient Indian society, beliefs, and practices, offering a glimpse into the daily lives of people during that time.<br>
+->While it is less prominent in mainstream Hindu rituals compared to the Rigveda, it still holds importance in certain traditions, particularly those related to healing and protective rituals.<br>
+
+
+
+
+</h3>
+        </div>
+    </div>
+
+<br><br>
+
+     <div class="content-container1">
+        <img src="{% static 'vedas/atharva2.png' %}" alt="kuchipudi2" style="width:800px; height:400px;border:2px solid #FFFFFF;">
+        <div class="text-container1">
+            <p style="font-size:18px"><b>1. Origin:</b><br><br>
+The Atharvaveda is believed to have originated around 1200-1000 BCE, making it one of the oldest texts in the Vedas.<br><br>
+<b>2.Composition:</b><br><br>
+
+ It is composed in Vedic Sanskrit and is traditionally attributed to the sage Atharvaṇa, although it likely evolved over centuries and was compiled by multiple <authors class=""></authors><br><br>
+                <b>3.Contents:</b><br><br>
+
+Unlike the other Vedas, the Atharvaveda contains a diverse range of materials beyond hymns and rituals. It includes spells, charms, prayers, magical incantations, herbal remedies, and rituals for various aspects of life.<br><br>
+<b>4.Topics Covered:</b><br><br>
+The Atharvaveda addresses a wide array of subjects, including healing, medicine, astrology, cosmology, marriage, childbirth, funeral rites, agriculture, social customs, and ethical conduct.<br><br><br>
+</p>
+        </div>
+    </div>
+<br>
+
+    <div class="content-container" >
+        <img src="{% static 'vedas/atharva3.jpg' %}" alt="kuchipudi2" style="width:800px; height:400px;border:2px solid #FFFFFF;">
+        <div class="text-container" style="text-align:left">
+            <p style="font-size:18px">
+<b>5.Structure:</b><br><br>
+
+ It is organized into 20 books, called kandas, which are further subdivided into hymns and verses. The structure is less uniform compared to other Vedas, reflecting its diverse content.<br><br>
+<br><b>6.Significance:</b><br><br>
+
+The Atharvaveda provides valuable insights into the religious, social, and cultural practices of ancient India. It reflects the beliefs, rituals, and everyday concerns of the people of that time.<br><br><br>
+<b>7.Use:</b><br><br>
+
+While it is less prominent in mainstream Hindu rituals compared to the Rigveda, certain traditions and communities still uphold the teachings and practices of the Atharvaveda, particularly in the domains of healing, protection, and magical rituals.<br><br><br>
+   </div>
+    </div>
+    {% endblock %}
+</body>
+</html>

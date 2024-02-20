@@ -120,11 +120,11 @@ def andhrafoods(request):
 
 
 def vedas(request):
-    return render(request, 'vedas.html')
+    return render(request, 'vedas/vedas.html')
 
 
 def rigveda(request):
-    return render(request,'rigveda.html')
+    return render(request,'vedas/rigveda.html')
 
 from flask import Flask, render_template
 
@@ -137,6 +137,15 @@ if __name__ == '__main__':
     module1.run(debug=True)
 
 
+def samaveda(request):
+    return render(request,'vedas/samaveda.html')
+
+def yajurveda(request):
+    return render(request,'vedas/yajurveda.html')
+
+
+def atharvaveda(request):
+    return render(request,'vedas/atharvaveda.html')
 
 
 

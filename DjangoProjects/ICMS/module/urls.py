@@ -36,5 +36,8 @@ urlpatterns = [
     path('vedas/', vedas,name='vedas'),
     path('rigveda/',rigveda,name='rigveda'),
     path('map/',map,name='map'),
+    path('sama/',samaveda,name='samaveda'),
+    path('yajurveda/',yajurveda,name='yajurveda'),
+    path('atharvaveda/',atharvaveda,name='atharvaveda'),
 ]
 
