@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        body{
+        background-color:#924802;
+        }
+        .blog-in-one{
+        background-color:#ffffff;
+        color:#924802h;
+        height:auto;
+        width:400px;
+        float:left;
+        margin-top:20px;
+        margin-bottom:20px;
+        margin-left:20px;
+        margin-right:20px;
+        padding:20px;
+        transition: box-shadow 0.3s ease-in-out;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 5.0);
+        }
+        .form{
+        text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <a href="{% url 'homepage1' %}" style="text-decoration: none; margin-right:1490px;"> <button type="button" style="border-radius:100px; font-size:20px; background-color:#FFFFFF; color:#924802;"><</button></a>
+    <div class="blog">
+    <h1 style="color:#ffffff;"><center>BLOGS</center></h1>
+
+    <!-- Form to add new blog post -->
+    <form method="post">
+        {% csrf_token %}
+        <span class="form" style="color:#ffffff;">{{ form.as_p }}</span>
+        <button type="submit" style="margin-left:200px;margin-left:750px;">Post</button>
+    </form>
+    <!-- Display existing blog posts -->
+       <h1 style="color:#ffffff; margin-left:30px;">RECENT BLOGS ABOUT INDIAN CULTURE</h1>
+    <ul>
+        {% for post in posts %}
+        <div class="blog-in-one">
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.content }}</p>
+             <p style="text-align:bottom;">Posted on: {{ post.created_at|date:"F j, Y g:i a" }}</p>
+        </div>
+        {% endfor %}
+    </ul>
+        </div>
+</body>
+</html>
