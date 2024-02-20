@@ -147,7 +147,94 @@ def yajurveda(request):
 def atharvaveda(request):
     return render(request,'vedas/atharvaveda.html')
 
+def punjab(request):
+    return render(request, 'punjab/punjab.html')
+
+def punjabclassical(request):
+    return render(request, 'punjab/punjabclassical.html')
 
 
+def punjabfestivals(request):
+    return render(request, 'punjab/punjabfestivals.html')
+
+
+def punjabreligion(request):
+    return render(request, 'punjab/punjabreligion.html')
+
+
+def punjablanguage(request):
+    return render(request, 'punjab/punjablanguage.html')
+
+
+def punjabfoods(request):
+    return render(request, 'punjab/punjabfoods.html')
+
+
+def hp(request):
+    return render(request, 'himachal/hp.html')
+
+def hpclassical(request):
+    return render(request, 'himachal/hpclassical.html')
+
+
+def hpfestivals(request):
+    return render(request, 'himachal/hpfestivals.html')
+
+
+def hpreligion(request):
+    return render(request, 'himachal/hpreligion.html')
+
+
+def hplanguage(request):
+    return render(request, 'himachal/hplanguage.html')
+
+
+def hpfoods(request):
+    return render(request, 'himachal/hpfoods.html')
+
+
+def Chandigarh(request):
+    return render(request, 'Chandigarh/Chandigarh.html')
+
+def Chandigarhclassical(request):
+    return render(request, 'Chandigarh/Chandigarhclassical.html')
+
+
+def Chandigarhfestivals(request):
+    return render(request, 'Chandigarh/Chandigarhfestivals.html')
+
+
+def Chandigarhreligion(request):
+    return render(request, 'Chandigarh/Chandigarhreligion.html')
+
+
+def Chandigarhlanguage(request):
+    return render(request, 'Chandigarh/Chandigarhlanguage.html')
+
+
+def Chandigarhfoods(request):
+    return render(request, 'Chandigarh/Chandigarhfoods.html')
+
+def uttarakhand(request):
+    return render(request, 'uttarakhand/uttarakhand.html')
+
+def uttarakhandclassical(request):
+    return render(request, 'uttarakhand/uttarakhandclassical.html')
+
+
+def uttarakhandfestivals(request):
+    return render(request, 'uttarakhand/uttarakhandfestivals.html')
+
+
+def uttarakhandreligion(request):
+    return render(request, 'uttarakhand/uttarakhandreligion.html')
+
+
+def uttarakhandlanguage(request):
+    return render(request, 'uttarakhand/uttarakhandlanguage.html')
+
+
+def uttarakhandfoods(request):
+    return render(request, 'uttarakhand/uttarakhandfoods.html')
 
 
