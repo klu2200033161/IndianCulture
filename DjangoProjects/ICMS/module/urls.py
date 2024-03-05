@@ -63,5 +63,17 @@ urlpatterns = [
     path('uttarakhandr/', uttarakhandreligion, name='uttarakhandreligion'),
     path('uttarakhandl/', uttarakhandlanguage, name='uttarakhandlanguage'),
     path('uttarakhandfd/', uttarakhandfoods, name='uttarakhandfoods'),
+    path('Haryana/',Haryana, name='Haryana'),
+    path('Haryanac/', Haryanaclassical, name='Haryanaclassical'),
+    path('Haryanaf/', Haryanafestivals, name='Haryanafestivals'),
+    path('Haryanar/', Haryanareligion, name='Haryanareligion'),
+    path('Haryanal/', Haryanalanguage, name='Haryanalanguage'),
+    path('Haryanafd/', Haryanafoods, name='Haryanafoods'),
+    path('Uttarpradesh/', Uttarpradesh, name='Uttarpradesh'),
+    path('Uttarpradeshc/', Uttarpradeshclassical, name='Uttarpradeshclassical'),
+    path('Uttarpradeshf/', Uttarpradeshfestivals, name='Uttarpradeshfestivals'),
+    path('Uttarpradeshr/',Uttarpradeshreligion, name='Uttarpradeshreligion'),
+    path('Uttarpradeshl/', Uttarpradeshlanguage, name='Uttarpradeshlanguage'),
+    path('Uttarpradeshfd/', Uttarpradeshfoods, name='Uttarpradeshfoods'),
 ]
 

@@ -237,4 +237,50 @@ def uttarakhandlanguage(request):
 def uttarakhandfoods(request):
     return render(request, 'uttarakhand/uttarakhandfoods.html')
 
+def Haryana(request):
+    return render(request, 'Haryana/Haryana.html')
+
+def Haryanaclassical(request):
+    return render(request, 'Haryana/Haryanaclassical.html')
+
+
+def Haryanafestivals(request):
+    return render(request, 'Haryana/Haryanafestivals.html')
+
+
+def Haryanareligion(request):
+    return render(request, 'Haryana/Haryanareligion.html')
+
+
+def Haryanalanguage(request):
+    return render(request, 'Haryana/Haryanalanguage.html')
+
+
+def Haryanafoods(request):
+    return render(request, 'Haryana/Haryanafoods.html')
+
+def Uttarpradesh(request):
+    return render(request, 'Uttarpradesh/Uttarpradesh.html')
+
+def Uttarpradeshclassical(request):
+    return render(request, 'Uttarpradesh/Uttarpradeshclassical.html')
+
+
+def Uttarpradeshfestivals(request):
+    return render(request, 'Uttarpradesh/Uttarpradeshfestivals.html')
+
+
+def Uttarpradeshreligion(request):
+    return render(request, 'Uttarpradesh/Uttarpradeshreligion.html')
+
+
+def Uttarpradeshlanguage(request):
+    return render(request, 'Uttarpradesh/Uttarpradeshlanguage.html')
+
+
+def Uttarpradeshfoods(request):
+    return render(request, 'Uttarpradesh/Uttarpradeshfoods.html')
+
+
+
 
