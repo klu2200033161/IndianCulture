@@ -75,5 +75,7 @@ urlpatterns = [
     path('Uttarpradeshr/',Uttarpradeshreligion, name='Uttarpradeshreligion'),
     path('Uttarpradeshl/', Uttarpradeshlanguage, name='Uttarpradeshlanguage'),
     path('Uttarpradeshfd/', Uttarpradeshfoods, name='Uttarpradeshfoods'),
+    path('contact1/',contactmail1,name='contactmail1'),
+    path('contact/',contactmail,name='contactmail'),
 ]
 

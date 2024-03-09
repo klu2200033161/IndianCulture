@@ -282,5 +282,18 @@ def Uttarpradeshfoods(request):
     return render(request, 'Uttarpradesh/Uttarpradeshfoods.html')
 
 
+def contactmail1(request):
+    return render(request, 'Feedback.html')
 
+
+def contactmail(request):
+    if request.method == "POST":
+        firstname = request.POST['firstname']
+        lastname = request.POST['lastname']
+        email = request.POST['email']
+        comment = request.POST['comment']
+        tosend = comment + '----------------This is just the '
+        data = contactus(firstname=firstname, lastname=lastname, email=email, comment=comment)
+        data.save()
+        return HttpResponse("<h1><center>Thank You For Giving Feedback</center></h1>")
 

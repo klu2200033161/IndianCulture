@@ -17,3 +17,13 @@ class signup(models.Model):
 
     class Meta:
         db_table = "Signup"
+
+
+class contactus(models.Model):
+    firstname = models.TextField(max_length=100)
+    lastname = models.TextField(max_length=100)
+    email = models.EmailField(primary_key=True)
+    comment = models.TextField(max_length=255)
+
+    class Meta:
+        db_table = "contactus"
