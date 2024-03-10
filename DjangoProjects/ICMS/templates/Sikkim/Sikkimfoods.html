@@ -1,0 +1,77 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+          body {
+            text-align: center;
+        }
+        .content-container {
+            display: flex;
+
+        }
+        .text-container {
+            margin-left: 20px; /* Adjust the margin as needed */
+            background-color:#FFFFFF;
+            border-radius:20px;
+            text-align: left;
+        }
+        .text-container:hover{
+              border: 3px solid #0D0E0E ;
+  transition: border-color 0.5s ease;
+        }
+
+         .content-container1 {
+            display: flex;
+            flex-direction:row-reverse;
+        }
+        .text-container1 {
+            margin-right: 20px;
+             background-color:#FFFFFF;
+            border-radius:20px;
+             text-align: left;
+        }
+         .text-container1:hover{
+              border: 3px solid #0D0E0E ;
+  transition: border-color 0.5s ease;
+
+        }
+    </style>
+</head>
+<body style="background-color:#924802 ;">
+    {% block body %}
+    <div>
+     <a href="{% url 'Sikkim' %}" style="text-decoration: none; margin-right:1490px;"> <button type="button" style="border-radius:100px; font-size:20px; background-color:#ffffff; color:#924802;"><</button></a>
+    <marquee><h1 style="color:#ffffff;">FOODS</h1></marquee>
+        </div>
+    <div class="content-container">
+        <img src="{% static 'foods/pappu.jpeg' %}" alt="pappu-avaki" style="width:1000px; height:400px;border:2px solid #FFFFFF;">
+        <div class="text-container">
+            <h2>MUDDA PAPPU-AVAKAI</h2>
+            <h3>Pappu-Avakai, a quintessential dish of Andhra cuisine, holds a special place in the hearts and palates of the people of Andhra Pradesh. Also known as Dal with Mango Pickle, this dish combines the comfort of cooked lentils (pappu) with the tanginess and spiciness of mango pickle (avakai). Pappu-Avakai is a flavorful and nutritious dish that exemplifies the distinctive taste profile of Andhra cuisine, where the balance of spices and the inclusion of locally available ingredients contribute to its unique culinary identity. It is often served with steamed rice and ghee, forming a staple part of the traditional Andhra meal.</h3>
+        </div>
+    </div>
+
+<br><br>
+
+     <div class="content-container1">
+        <img src="{% static 'foods/biriyani.jpg' %}" alt="kuchipudi2" style="width:800px; height:400px;border:2px solid #FFFFFF;">
+        <div class="text-container1">
+            <h2>ANDHRA BIRIYANI</h2>
+            <h3>
+Andhra Biryani, a spicy and aromatic variant of the classic biryani, is another culinary delight originating from Andhra Pradesh. Known for its fiery flavors and the use of local spices, Andhra Biryani often features tender pieces of meat, such as chicken or mutton, marinated in a spicy masala blend. The biryani is then layered and cooked with fragrant Basmati rice, resulting in a flavorful and hearty dish that reflects the bold and vibrant culinary traditions of the region. Andhra Biryani is a testament to the state's love for bold spices and the art of culinary innovation.</h3>
+        </div>
+    </div>
+
+<br><br>
+    <div class="content-container">
+        <img src="{% static 'andhra/kodipulav.png' %}" alt="kuchipudi" style="width:2500px; height:400px;border:2px solid #FFFFFF;">
+        <div class="text-container">
+            <h2>KODI PULAO</h2>
+            <h3>Kodi Pulao, or Chicken Pulao, is a popular rice dish in Andhra Pradesh that showcases the state's culinary prowess. This aromatic and savory pulao is made with fragrant Basmati rice, succulent pieces of chicken, and a blend of aromatic spices. The dish is often garnished with fried onions and fresh coriander, adding layers of flavor to the already delectable preparation. Kodi Pulao is a testament to the rich culinary heritage of Andhra Pradesh, where the harmonious combination of spices and locally sourced ingredients results in a dish that is not only delicious but also reflective of the region's unique culinary identity.</h3>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+</html>

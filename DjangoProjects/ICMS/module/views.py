@@ -25,7 +25,6 @@ from django.contrib.auth.decorators import login_required
 
 from .models import *
 
-
 def login1(request):
     if request.method == 'POST':
         username = request.POST['username']
@@ -297,3 +296,154 @@ def contactmail(request):
         data.save()
         return HttpResponse("<h1><center>Thank You For Giving Feedback</center></h1>")
 
+
+
+def Sikkim(request):
+    return render(request, 'Sikkim/Sikkim.html')
+
+def Sikkimclassical(request):
+    return render(request, 'Sikkim/Sikkimclassical.html')
+
+
+def Sikkimfestivals(request):
+    return render(request, 'Sikkim/Sikkimfestivals.html')
+
+
+def Sikkimreligion(request):
+    return render(request, 'Sikkim/Sikkimreligion.html')
+
+
+def Sikkimlanguage(request):
+    return render(request, 'Sikkim/Sikkimlanguage.html')
+
+
+def Sikkimfoods(request):
+    return render(request, 'Sikkim/Sikkimfoods.html')
+
+
+def Rajasthan(request):
+    return render(request, 'Rajasthan/Rajasthan.html')
+
+def Rajasthanclassical(request):
+    return render(request, 'Rajasthan/Rajasthanclassical.html')
+
+
+def Rajasthanfestivals(request):
+    return render(request, 'Rajasthan/Rajasthanfestivals.html')
+
+
+def Rajasthanreligion(request):
+    return render(request, 'Rajasthan/Rajasthanreligion.html')
+
+
+def Rajasthanlanguage(request):
+    return render(request, 'Rajasthan/Rajasthanlanguage.html')
+
+def Rajasthanfoods(request):
+    return render(request, 'Rajasthan/Rajasthanfoods.html')
+
+def Bihar(request):
+    return render(request, 'Bihar/Bihar.html')
+
+def Biharclassical(request):
+    return render(request, 'Bihar/Biharclassical.html')
+
+
+def Biharfestivals(request):
+    return render(request, 'Bihar/Biharfestivals.html')
+
+
+def Biharreligion(request):
+    return render(request, 'Bihar/Biharreligion.html')
+
+
+def Biharlanguage(request):
+    return render(request, 'Bihar/Biharlanguage.html')
+
+
+def Biharfoods(request):
+    return render(request, 'Bihar/Biharfoods.html')
+
+def Jharkhand(request):
+    return render(request, 'Jharkhand/Jharkhand.html')
+
+def Jharkhandclassical(request):
+    return render(request, 'Jharkhand/Jharkhandclassical.html')
+
+
+def Jharkhandfestivals(request):
+    return render(request, 'Jharkhand/Jharkhandfestivals.html')
+
+
+def Jharkhandreligion(request):
+    return render(request, 'Jharkhand/Jharkhandreligion.html')
+
+
+def Jharkhandlanguage(request):
+    return render(request, 'Jharkhand/Jharkhandlanguage.html')
+
+
+def Jharkhandfoods(request):
+    return render(request, 'Jharkhand/Jharkhandfoods.html')
+def Gujarat(request):
+    return render(request, 'Gujarat/Gujarat.html')
+
+def Gujaratclassical(request):
+    return render(request, 'Gujarat/Gujaratclassical.html')
+
+
+def Gujaratfestivals(request):
+    return render(request, 'Gujarat/Gujaratfestivals.html')
+
+
+def Gujaratreligion(request):
+    return render(request, 'Gujarat/Gujaratreligion.html')
+
+
+def Gujaratlanguage(request):
+    return render(request, 'Gujarat/Gujaratlanguage.html')
+
+def Gujaratfoods(request):
+    return render(request, 'Gujarat/Gujaratfoods.html')
+def MP(request):
+    return render(request, 'MP/MP.html')
+
+def MPclassical(request):
+    return render(request, 'MP/MPclassical.html')
+
+def MPfestivals(request):
+    return render(request, 'MP/MPfestivals.html')
+
+
+def MPreligion(request):
+    return render(request, 'MP/MPreligion.html')
+
+
+def MPlanguage(request):
+    return render(request, 'MP/MPlanguage.html')
+
+
+def MPfoods(request):
+    return render(request, 'MP/MPfoods.html')
+
+
+def WB(request):
+    return render(request, 'WB/WB.html')
+
+def WBclassical(request):
+    return render(request, 'WB/WBclassical.html')
+
+def WBfestivals(request):
+    return render(request, 'WB/WBfestivals.html')
+
+
+def WBreligion(request):
+    return render(request, 'WB/WBreligion.html')
+
+
+def WBlanguage(request):
+    return render(request, 'WB/WBlanguage.html')
+
+
+def WBfoods(request):
+    return render(request, 'WB/WBfoods.html')
