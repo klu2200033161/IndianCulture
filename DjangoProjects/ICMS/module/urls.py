@@ -7,6 +7,7 @@ urlpatterns = [
     path('', home, name='home'),
     path('login/', loginpage, name='loginpage'),
     path('login1/',login1,name='login1'),
+    path('forgot_password/', forgot_password, name='forgot_password'),
     path('register/', register, name='register'),
     path('sign/',signup1,name='signup1'),
     path('home1/', homepage1, name='homepage1'),
@@ -77,5 +78,6 @@ urlpatterns = [
     path('Uttarpradeshfd/', Uttarpradeshfoods, name='Uttarpradeshfoods'),
     path('contact1/',contactmail1,name='contactmail1'),
     path('contact/',contactmail,name='contactmail'),
+    path('religious/',religious,name='religious'),
 ]
 
