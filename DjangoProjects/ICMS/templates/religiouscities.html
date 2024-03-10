@@ -1,0 +1,141 @@
+{% extends 'Navstates.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Famous Places</title>
+    <link rel="stylesheet" href="{% static 'path/to/bootstrap.min.css' %}">
+</head>
+<body>
+{% block body %}
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="#11">
+      <img src="{% static 'ReligiousCities/Ayodya.jpg' %}" class="d-block w-100" alt="AYODYA" height="625px">
+    </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#12">
+      <img src="{% static 'ReligiousCities/Badrinath.jpg' %}" class="d-block w-100" alt="BADRINATH" height="625px">
+    </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#13">
+      <img src="{% static 'ReligiousCities/Dwarkadhish.jpg' %}" class="d-block w-100" alt="DWARAKA" height="625px">
+    </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#14">
+      <img src="{% static 'ReligiousCities/Haridwar.jpg' %}" class="d-block w-100" alt="HARIDWAR" height="625px">
+    </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#15">
+      <img src="{% static 'ReligiousCities/Kedarnath.jpg' %}" class="d-block w-100" alt="KEDARANATH" height="625px">
+    </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#16">
+      <img src="{% static 'ReligiousCities/rameswaram.jpg' %}" class="d-block w-100" alt="RAMESWARAM" height="625px">
+    </a>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<script src="{% static 'path/to/jquery.min.js' %}"></script>
+<script src="{% static 'path/to/bootstrap.bundle.min.js' %}"></script>
+
+<script>
+$(document).ready(function(){
+
+    var interval = 1000;
+    function autoSlideCarousel() {
+        $('#carouselExample').carousel('next');
+    }
+    setInterval(autoSlideCarousel, interval);
+});
+</script>
+<div style="background-color:#924802;">
+<br><br>
+<center><h1 style="color:#F8F9F9;">SOME OF THE HISTORICAL CITIES IN INDIA</h1></center>
+<br>
+<div id="11" class="div11">
+<div class="card text-center" >
+  <div class="card-header">
+    <b>AYODYA</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Ayodhya used to be the capital of the ancient Kosala Kingdom. It has an average elevation of 93 meters (305 feet). Owing to the belief as the birthplace of Bhagwan Shri Ram, Ayodhya (Awadhpuri) has been regarded as first one of the seven most important pilgrimage sites (Mokshdayini Sapt Puris) for Hindus.</p>
+  </div>
+  </div>
+</div>
+<br>
+
+<div id="12" class="card text-center" >
+  <div class="card-header">
+    <b>BADRINATH</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Sacred Abode of Lord Vishnu: Badrinath Temple is dedicated to Lord Vishnu, specifically in his form as Badrinarayan. According to Hindu beliefs, Badrinath is one of the eight self-manifested idols of Lord Vishnu and is considered one of the 108 Divya Desams, holy abodes of Lord Vishnu.</p>
+  </div>
+
+</div>
+<br>
+<div id="13" class="card text-center" >
+  <div class="card-header">
+    <b>DWARAKA</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Dwarka, a sacred location, is associated with Lord Krishna. This city is a prominent pilgrimage destination that draws devotees from all over the world. It is one of the most important pilgrimage sites in India. Dwarka, which is adjacent to the Arabian Sea, has lovely beaches.</p>
+  </div>
+</div>
+<br>
+<div id="14" class="card text-center" >
+  <div class="card-header">
+    <b>HARIDWAR</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Haridwar is one of the first towns where Ganga emerges from the mountains to touch the planes. And that's why the water is crystal clear and cool. Lush green forests and small ponds add to the scenic beauty of this holy land. The Rajaji National Park is just 10 kms from Haridwar.</p>
+ </div>
+
+</div>
+<br>
+<div id="15" class="card text-center" >
+  <div class="card-header">
+    <b>KEDARNATH</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">It is believed that visiting this temple washes away all sins and brings salvation or moksha from the cycle of birth and death. Every year thousands of devotees visit Kedarnath during the Char Dham Yatra which also includes Gangotri, Yamunotri and Badrinath.</p>
+ </div>
+
+</div>
+<br>
+<div id="16" class="card text-center" >
+  <div class="card-header">
+    <b>RAMESWARAM</b>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Rameswaram is the terminus of the railway line from Chennai and Madurai. Together with Varanasi, it is considered to be one of the holiest places in India to Hindus and is part of the Char Dham pilgrimage. From top: Ramanathaswamy Temple tower, Pamban Bridge, and a set of fishing boats.</p>
+    </div>
+
+</div>
+<br>
+
+</div>
+<br>
+
+</div>
+  <br>
+  </div>
+{% endblock %}
+</body>
+</html>

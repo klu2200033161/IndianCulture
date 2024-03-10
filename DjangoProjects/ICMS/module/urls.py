@@ -7,6 +7,7 @@ urlpatterns = [
     path('', home, name='home'),
     path('login/', loginpage, name='loginpage'),
     path('login1/',login1,name='login1'),
+    path('forgot_password/', forgot_password, name='forgot_password'),
     path('register/', register, name='register'),
     path('sign/',signup1,name='signup1'),
     path('home1/', homepage1, name='homepage1'),
@@ -77,6 +78,7 @@ urlpatterns = [
     path('Uttarpradeshfd/', Uttarpradeshfoods, name='Uttarpradeshfoods'),
     path('contact1/',contactmail1,name='contactmail1'),
     path('contact/',contactmail,name='contactmail'),
+<<<<<<< HEAD
     path('Sikkim/', Sikkim, name='Sikkim'),
     path('Sikkimc/', Sikkimclassical, name='Sikkimclassical'),
     path('Sikkimf/', Sikkimfestivals, name='Sikkimfestivals'),
@@ -119,5 +121,8 @@ urlpatterns = [
     path('WBr/', WBreligion, name='WBreligion'),
     path('WBl/', WBlanguage, name='WBlanguage'),
     path('WBfd/', WBfoods, name='WBfoods'),
+=======
+    path('religious/',religious,name='religious'),
+>>>>>>> 1b64331b6d139ddd65f523a74b09493fbe93ba97
 ]
 

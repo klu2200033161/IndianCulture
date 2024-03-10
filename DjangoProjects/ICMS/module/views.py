@@ -123,31 +123,37 @@ def vedas(request):
 
 
 def rigveda(request):
-    return render(request,'vedas/rigveda.html')
+    return render(request, 'vedas/rigveda.html')
+
 
 from flask import Flask, render_template
 
 module1 = Flask(__name__)
 
+
 def map(request):
-    return render(request,'map.html')
+    return render(request, 'map.html')
+
 
 if __name__ == '__main__':
     module1.run(debug=True)
 
 
 def samaveda(request):
-    return render(request,'vedas/samaveda.html')
+    return render(request, 'vedas/samaveda.html')
+
 
 def yajurveda(request):
-    return render(request,'vedas/yajurveda.html')
+    return render(request, 'vedas/yajurveda.html')
 
 
 def atharvaveda(request):
-    return render(request,'vedas/atharvaveda.html')
+    return render(request, 'vedas/atharvaveda.html')
+
 
 def punjab(request):
     return render(request, 'punjab/punjab.html')
+
 
 def punjabclassical(request):
     return render(request, 'punjab/punjabclassical.html')
@@ -172,6 +178,7 @@ def punjabfoods(request):
 def hp(request):
     return render(request, 'himachal/hp.html')
 
+
 def hpclassical(request):
     return render(request, 'himachal/hpclassical.html')
 
@@ -195,6 +202,7 @@ def hpfoods(request):
 def Chandigarh(request):
     return render(request, 'Chandigarh/Chandigarh.html')
 
+
 def Chandigarhclassical(request):
     return render(request, 'Chandigarh/Chandigarhclassical.html')
 
@@ -214,8 +222,10 @@ def Chandigarhlanguage(request):
 def Chandigarhfoods(request):
     return render(request, 'Chandigarh/Chandigarhfoods.html')
 
+
 def uttarakhand(request):
     return render(request, 'uttarakhand/uttarakhand.html')
+
 
 def uttarakhandclassical(request):
     return render(request, 'uttarakhand/uttarakhandclassical.html')
@@ -236,8 +246,10 @@ def uttarakhandlanguage(request):
 def uttarakhandfoods(request):
     return render(request, 'uttarakhand/uttarakhandfoods.html')
 
+
 def Haryana(request):
     return render(request, 'Haryana/Haryana.html')
+
 
 def Haryanaclassical(request):
     return render(request, 'Haryana/Haryanaclassical.html')
@@ -258,8 +270,10 @@ def Haryanalanguage(request):
 def Haryanafoods(request):
     return render(request, 'Haryana/Haryanafoods.html')
 
+
 def Uttarpradesh(request):
     return render(request, 'Uttarpradesh/Uttarpradesh.html')
+
 
 def Uttarpradeshclassical(request):
     return render(request, 'Uttarpradesh/Uttarpradeshclassical.html')
@@ -294,9 +308,10 @@ def contactmail(request):
         tosend = comment + '----------------This is just the '
         data = contactus(firstname=firstname, lastname=lastname, email=email, comment=comment)
         data.save()
-        return HttpResponse("<h1><center>Thank You For Giving Feedback</center></h1>")
+        return redirect('homepage1')
 
 
+<<<<<<< HEAD
 
 def Sikkim(request):
     return render(request, 'Sikkim/Sikkim.html')
@@ -447,3 +462,24 @@ def WBlanguage(request):
 
 def WBfoods(request):
     return render(request, 'WB/WBfoods.html')
+=======
+from django.contrib.auth.forms import PasswordResetForm
+from django.contrib import messages
+from django.shortcuts import render, redirect
+
+
+def forgot_password(request):
+    if request.method == 'POST':
+        form = PasswordResetForm(request.POST)
+        if form.is_valid():
+            form.save(request=request)
+            messages.success(request, 'An email has been sent with instructions to reset your password.')
+            return redirect('loginpage')
+    else:
+        form = PasswordResetForm()
+    return render(request, 'forgot_password.html', {'form': form})
+
+
+def religious(request):
+    return render(request,'religiouscities.html')
+>>>>>>> 1b64331b6d139ddd65f523a74b09493fbe93ba97
