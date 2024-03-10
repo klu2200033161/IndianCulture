@@ -2,7 +2,6 @@ from django.contrib import admin
 from django.urls import path
 from .views import *
 
-
 urlpatterns = [
     path('', home, name='home'),
     path('login/', loginpage, name='loginpage'),
@@ -78,7 +77,6 @@ urlpatterns = [
     path('Uttarpradeshfd/', Uttarpradeshfoods, name='Uttarpradeshfoods'),
     path('contact1/',contactmail1,name='contactmail1'),
     path('contact/',contactmail,name='contactmail'),
-<<<<<<< HEAD
     path('Sikkim/', Sikkim, name='Sikkim'),
     path('Sikkimc/', Sikkimclassical, name='Sikkimclassical'),
     path('Sikkimf/', Sikkimfestivals, name='Sikkimfestivals'),
@@ -121,8 +119,7 @@ urlpatterns = [
     path('WBr/', WBreligion, name='WBreligion'),
     path('WBl/', WBlanguage, name='WBlanguage'),
     path('WBfd/', WBfoods, name='WBfoods'),
-=======
     path('religious/',religious,name='religious'),
->>>>>>> 1b64331b6d139ddd65f523a74b09493fbe93ba97
+
 ]
 

@@ -311,8 +311,6 @@ def contactmail(request):
         return redirect('homepage1')
 
 
-<<<<<<< HEAD
-
 def Sikkim(request):
     return render(request, 'Sikkim/Sikkim.html')
 
@@ -462,7 +460,6 @@ def WBlanguage(request):
 
 def WBfoods(request):
     return render(request, 'WB/WBfoods.html')
-=======
 from django.contrib.auth.forms import PasswordResetForm
 from django.contrib import messages
 from django.shortcuts import render, redirect
@@ -482,4 +479,3 @@ def forgot_password(request):
 
 def religious(request):
     return render(request,'religiouscities.html')
->>>>>>> 1b64331b6d139ddd65f523a74b09493fbe93ba97
