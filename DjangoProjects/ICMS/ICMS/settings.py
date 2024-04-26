@@ -87,7 +87,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'IndianCulture',
         'USER': 'postgres',
-        'PASSWORD': '962004',
+        'PASSWORD': '13122004',
         'HOST': 'localhost',
         'PORT': '5432'
     }
