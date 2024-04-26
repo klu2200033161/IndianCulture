@@ -309,8 +309,6 @@ def contactmail(request):
         data = contactus(firstname=firstname, lastname=lastname, email=email, comment=comment)
         data.save()
         return redirect('homepage1')
-
-
 def Sikkim(request):
     return render(request, 'Sikkim/Sikkim.html')
 
@@ -501,4 +499,7 @@ def Chhattisgarhlanguage(request):
 
 def Chhattisgarhfoods(request):
     return render(request, 'Chhattisgarh/Chhattisgarhfoods.html')
+
+def religious(request):
+    return render(request,'religiouscities.html')
 

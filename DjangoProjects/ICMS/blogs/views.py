@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import Post
+from .models import Post, Blog
 from .forms import PostForm
 
 def blogs(request):
@@ -14,3 +14,12 @@ def blogs(request):
     posts = Post.objects.all().order_by('-created_at')
     context = {'posts': posts, 'form': form}
     return render(request, 'blog.html', context)
+
+
+def blog_list(request):
+    blogs = Blog.objects.all()
+    query = request.GET.get('q')
+    if query:
+        blogs = blogs.filter(title__icontains=query)
+    return render(request, 'blog.html', {'blogs': blogs})
+
