@@ -500,6 +500,126 @@ def Chhattisgarhlanguage(request):
 def Chhattisgarhfoods(request):
     return render(request, 'Chhattisgarh/Chhattisgarhfoods.html')
 
-def religious(request):
-    return render(request,'religiouscities.html')
+def Odisha(request):
+    return render(request, 'Odisha/Odisha.html')
 
+def Odishaclassical(request):
+    return render(request, 'Odisha/Odishaclassical.html')
+
+def Odishafestivals(request):
+    return render(request, 'Odisha/Odishafestivals.html')
+
+
+def Odishareligion(request):
+    return render(request, 'Odisha/Odishareligion.html')
+
+def Odishalanguage(request):
+    return render(request, 'Odisha/Odishalanguage.html')
+def Odishafoods(request):
+    return render(request, 'Odisha/Odishafoods.html')
+
+def TS(request):
+    return render(request, 'TS/TS.html')
+
+def TSclassical(request):
+    return render(request, 'TS/TSclassical.html')
+
+def TSfestivals(request):
+    return render(request, 'TS/TSfestivals.html')
+
+
+def TSreligion(request):
+    return render(request, 'TS/TSreligion.html')
+
+def TSlanguage(request):
+    return render(request, 'TS/TSlanguage.html')
+def TSfoods(request):
+    return render(request, 'TS/TSfoods.html')
+
+def KA(request):
+    return render(request, 'KA/KA.html')
+
+def KAclassical(request):
+    return render(request, 'KA/KAclassical.html')
+
+def KAfestivals(request):
+    return render(request, 'KA/KAfestivals.html')
+
+def KAreligion(request):
+    return render(request, 'KA/KAreligion.html')
+
+def KAlanguage(request):
+    return render(request, 'KA/KAlanguage.html')
+def KAfoods(request):
+    return render(request, 'KA/KAfoods.html')
+
+def MH(request):
+    return render(request, 'MH/MH.html')
+
+def MHclassical(request):
+    return render(request, 'MH/MHclassical.html')
+
+def MHfestivals(request):
+    return render(request, 'MH/MHfestivals.html')
+
+def MHreligion(request):
+    return render(request, 'MH/MHreligion.html')
+
+def MHlanguage(request):
+    return render(request, 'MH/MHlanguage.html')
+def MHfoods(request):
+    return render(request, 'MH/MHfoods.html')
+
+def Goa(request):
+    return render(request, 'Goa/Goa.html')
+
+def Goaclassical(request):
+    return render(request, 'Goa/Goaclassical.html')
+
+def Goafestivals(request):
+    return render(request, 'Goa/Goafestivals.html')
+
+def Goareligion(request):
+    return render(request, 'Goa/Goareligion.html')
+
+def Goalanguage(request):
+    return render(request, 'Goa/Goalanguage.html')
+
+def Goafoods(request):
+    return render(request, 'Goa/Goafoods.html')
+
+def Kerala(request):
+    return render(request, 'Kerala/Kerala.html')
+
+def Keralaclassical(request):
+    return render(request, 'Kerala/Keralaclassical.html')
+
+def Keralafestivals(request):
+    return render(request, 'Kerala/Keralafestivals.html')
+
+def Keralareligion(request):
+    return render(request, 'Kerala/Keralareligion.html')
+
+def Keralalanguage(request):
+    return render(request, 'Kerala/Keralalanguage.html')
+
+def Keralafoods(request):
+    return render(request, 'Kerala/Keralafoods.html')
+
+def TN(request):
+    return render(request, 'TN/TN.html')
+
+def TNclassical(request):
+    return render(request, 'TN/TNclassical.html')
+
+def TNfestivals(request):
+    return render(request, 'TN/TNfestivals.html')
+
+def TNreligion(request):
+    return render(request, 'TN/TNreligion.html')
+
+def TNlanguage(request):
+    return render(request, 'TN/TNlanguage.html')
+
+def TNfoods(request):
+    return render(request, 'TN/TNfoods.html')
