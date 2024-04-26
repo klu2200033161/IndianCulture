@@ -1,0 +1,115 @@
+{% extends 'Navstates.html' %}
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Explore CHHATTISGARH</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Add any additional stylesheets or scripts here -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            margin-top: 20px;
+        }
+
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-title {
+            color: #007bff;
+        }
+
+        .card-text {
+            color: #495057;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    {% block body %}
+    <div style="background-color:#924802;">
+    <div class="container">
+        <h1 class="text-center" style="color:#ffffff;">DISCOVER CHHATTISGARH</h1>
+
+        <div class="row mt-4">
+            <div class="col-sm-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Classical Dances</h5>
+                        <p class="card-text">Explore the rich heritage of classical dances in Andhra Pradesh.</p>
+                        <a href="{% url 'Chhattisgarhclassical' %}" class="btn btn-primary">Explore More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Festivals</h5>
+                        <p class="card-text">Experience the vibrant festivals celebrated with zeal and enthusiasm.</p>
+                        <a href="{% url 'Chhattisgarhfestivals' %}" class="btn btn-primary">Explore More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Religious Practices</h5>
+                        <p class="card-text">Learn about the diverse religious practices that shape the culture.</p>
+                        <a href="{% url 'Chhattisgarhreligion' %}" class="btn btn-primary">Explore More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Language Diversity</h5>
+                        <p class="card-text">Discover the linguistic richness and diversity of Andhra Pradesh.</p>
+                        <a href="{% url 'Chhattisgarhlanguage' %}" class="btn btn-primary">Explore More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Foods & Culture</h5>
+                        <p class="card-text">Indulge in the flavors of Andhra cuisine and explore its cultural significance.</p>
+                        <a href="{% url 'Chhattisgarhfoods' %}" class="btn btn-primary">Explore More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <br><br><br>
+        <p>.</p>
+        </div>
+    {% endblock %}
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Add any additional scripts here -->
+</body>
+
+</html>

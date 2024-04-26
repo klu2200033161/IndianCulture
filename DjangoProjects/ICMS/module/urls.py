@@ -120,6 +120,11 @@ urlpatterns = [
     path('WBl/', WBlanguage, name='WBlanguage'),
     path('WBfd/', WBfoods, name='WBfoods'),
     path('religious/',religious,name='religious'),
-
+    path('Chhattisgarh/', Chhattisgarh, name='Chhattisgarh'),
+    path('Chhattisgarhc/', Chhattisgarhclassical, name='Chhattisgarhclassical'),
+    path('Chhattisgarhf/', Chhattisgarhfestivals, name='Chhattisgarhfestivals'),
+    path('Chhattisgarhr/', Chhattisgarhreligion, name='Chhattisgarhreligion'),
+    path('Chhattisgarhl/', Chhattisgarhlanguage, name='Chhattisgarhlanguage'),
+    path('Chhattisgarhfd/', Chhattisgarhfoods, name='Chhattisgarhfoods'),
 ]
 

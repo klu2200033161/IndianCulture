@@ -479,3 +479,26 @@ def forgot_password(request):
 
 def religious(request):
     return render(request,'religiouscities.html')
+
+
+def Chhattisgarh(request):
+    return render(request, 'Chhattisgarh/Chhattisgarh.html')
+
+def Chhattisgarhclassical(request):
+    return render(request, 'Chhattisgarh/Chhattisgarhclassical.html')
+
+def Chhattisgarhfestivals(request):
+    return render(request, 'Chhattisgarh/Chhattisgarhfestivals.html')
+
+
+def Chhattisgarhreligion(request):
+    return render(request, 'Chhattisgarh/Chhattisgarhreligion.html')
+
+
+def Chhattisgarhlanguage(request):
+    return render(request, 'Chhattisgarh/Chhattisgarhlanguage.html')
+
+
+def Chhattisgarhfoods(request):
+    return render(request, 'Chhattisgarh/Chhattisgarhfoods.html')
+
